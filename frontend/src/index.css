@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+}
+
+.Toastify__toast,
+.Toastify__toast-body {
+  font-family: 'Montserrat', system-ui, sans-serif !important;
+}
+
+/** Tiêu đề hero / đăng nhập — Montserrat, độ đậm vừa */
+.prata-regular {
+  font-weight: 500;
+  font-style: normal;
+}
+
+a.active hr{
+    display: block;
+}
+
+/* Thanh cuộn tùy chỉnh — nền tối, thumb xám mỏng bo tròn (Firefox + WebKit) */
+html,
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 #141414;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #141414;
+  border-radius: 9999px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 9999px;
+  border: 2px solid #141414;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Chỉ dùng nút hiện/ẩn tùy chỉnh — ẩn icon mặc định của Edge/Chrome */
+.hide-browser-password-reveal::-ms-reveal,
+.hide-browser-password-reveal::-ms-clear {
+  display: none;
+}
+
+.hide-browser-password-reveal::-webkit-credentials-auto-fill-button,
+.hide-browser-password-reveal::-webkit-strong-password-auto-fill-button {
+  display: none !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+html::-webkit-scrollbar-corner {
+  background: #141414;
+}
+
+/** Ẩn scrollbar nội bộ (ví dụ gallery ảnh SP) — vẫn cuộn được bằng chuột / trackpad */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+  
+  @media (max-width:640px) {
+    a.active{
+        background-color: black;
+        color: white;
+    }
+  }
+
+/* Badge thông báo trên icon chuông — luôn hiển thị, không phụ thuộc hover dropdown */
+.notification-bell-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-bell-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 1rem;
+  height: 1rem;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dc2626;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Trượt ảnh sản phẩm khi hover (danh sách) */
+.product-image-hover-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-image-hover-slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-image-hover-slide .product-img-main {
+  transform: translateX(0);
+}
+
+.product-image-hover-slide .product-img-hover {
+  transform: translateX(100%);
+}
+
+.product-image-hover-slide:hover .product-img-main {
+  transform: translateX(-100%);
+}
+
+.product-image-hover-slide:hover .product-img-hover {
+  transform: translateX(0);
+}
+
+/* Trang chi tiết sản phẩm — giá */
+.product-detail-price-current {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #dc2626;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  .product-detail-price-current {
+    font-size: 1.875rem;
+  }
+}
+
+.product-detail-price-original {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.product-detail-price-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: #dc2626;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  line-height: 1.25;
+}
+
+/* Chọn size — dấu tick góc khi đã chọn */
+.product-size-btn--selected::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 1.35rem 1.35rem 0;
+  border-color: transparent #dc2626 transparent transparent;
+  pointer-events: none;
+}
+
+.product-size-btn--selected::before {
+  content: '✓';
+  position: absolute;
+  top: 0.1rem;
+  right: 0.2rem;
+  z-index: 2;
+  font-size: 0.55rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  pointer-events: none;
+}
