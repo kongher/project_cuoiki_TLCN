@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "6a10766b9d8c1cc21ad49061",
+    "name": "",
+    "imageUrl": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779463786/vptvqbznlrguoeuspccm.png",
+    "linkUrl": "scroll:latest-products",
+    "isActive": false,
+    "sortOrder": 4,
+    "createdAt": 1779463787376,
+    "updatedAt": 1782109647663,
+    "__v": 0
+  },
+  {
+    "_id": "6a152f066e5fb50b473bd8dc",
+    "name": "",
+    "imageUrl": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773189/oghmfadtlrqej6csjwo4.png",
+    "linkUrl": "scroll:latest-products",
+    "isActive": true,
+    "sortOrder": 1,
+    "createdAt": 1779773190293,
+    "updatedAt": 1780483154852,
+    "__v": 0
+  },
+  {
+    "_id": "6a158d8b984353cb57c28c15",
+    "name": "",
+    "imageUrl": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779797386/jeyhsbwe7loq8gyjijig.png",
+    "linkUrl": "/sale?dept=Women",
+    "isActive": true,
+    "sortOrder": 2,
+    "createdAt": 1779797387351,
+    "updatedAt": 1779797387351,
+    "__v": 0
+  },
+  {
+    "_id": "6a38d3f5453f89b40fef868c",
+    "name": "",
+    "imageUrl": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782109171/tmgch3bh9jwcbt7zkpjw.png",
+    "linkUrl": "scroll:special-sale-month",
+    "isActive": true,
+    "sortOrder": 3,
+    "createdAt": 1782109173043,
+    "updatedAt": 1782109173043,
+    "__v": 0
+  },
+  {
+    "_id": "6a38d5ca453f89b40fef86c0",
+    "name": "",
+    "imageUrl": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782109640/rqhvpnzxjpme5ilsgync.png",
+    "linkUrl": "scroll:latest-products",
+    "isActive": true,
+    "sortOrder": 5,
+    "createdAt": 1782109642161,
+    "updatedAt": 1782109642161,
+    "__v": 0
+  }
+]

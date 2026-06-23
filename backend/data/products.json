@@ -1,0 +1,3271 @@
+[
+  {
+    "_id": "6a034ccf4c816ef1e3ecb56d",
+    "name": "Quần tây",
+    "description": "Quần tây form regular fit thoải mái có tăng đơn co giãn tôn dáng người mặc.\r\nPhần gấu quần chưa lên lai (khách hàng tự lên lai theo chiều dài mong muốn). \r\nMàu sắc trung tính dễ phối đồ.\r\nChất liệu: 100% Polyester Nano",
+    "price": 599000,
+    "discountPercent": 0,
+    "salePrice": 599000,
+    "isSpecialSale": false,
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601165/bxnigava1ukfbpqhwnof.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601166/dg7lfhr2i1vgguswaos1.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/b6tfymedhzebbdfiwm8m.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/hyctyqwclls11t7wsikz.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/zgwefbcxowzehknhzokr.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Kem/Be",
+        "sku": "QT001-BE-28",
+        "skuBySize": {
+          "28": "QT001-BE-28",
+          "29": "QT001-BE-29",
+          "30": "QT001-BE-30",
+          "32": "QT001-BE-32",
+          "33": "QT001-BE-33",
+          "34": "QT001-BE-34"
+        },
+        "colorHex": "#F5F5DC",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601163/ykmql3b2d5hojalwieul.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601165/bxnigava1ukfbpqhwnof.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601166/dg7lfhr2i1vgguswaos1.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/b6tfymedhzebbdfiwm8m.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/hyctyqwclls11t7wsikz.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/zgwefbcxowzehknhzokr.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601165/bxnigava1ukfbpqhwnof.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601166/dg7lfhr2i1vgguswaos1.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/b6tfymedhzebbdfiwm8m.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/hyctyqwclls11t7wsikz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778601167/zgwefbcxowzehknhzokr.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112758/ol1qcbufvlwzfr84ve9u.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "28": 10,
+          "29": 10,
+          "30": 10,
+          "32": 25,
+          "33": 7,
+          "34": 15
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-tay",
+    "parentSku": "QT001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "28",
+      "29",
+      "30",
+      "32",
+      "33",
+      "34"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1778601167079,
+    "__v": 3,
+    "tags": []
+  },
+  {
+    "_id": "6a0350ed4c816ef1e3ecb639",
+    "name": "Áo sơ mi",
+    "description": "Áo sơ mi ngắn tay, kiểu dáng Body Fit dễ mặc, hợp form dáng, áo tà bằng.\r\nMàu sắc và kiểu dáng trẻ trung, kiểu dáng hiện đại, dễ phối đồ.\r\nChất liệu: 87% Polyester 13% Rayon",
+    "price": 299000,
+    "discountPercent": 10,
+    "salePrice": 269100,
+    "isSpecialSale": false,
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778602219/qxlcnpdvxjla4uo9412p.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112812/qf5wg94mbzz8mlaqgvuq.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112814/c8qflljnulp3phkg7qwt.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Xanh Navy (Than)",
+        "sku": "ASM001-NV-M",
+        "skuBySize": {
+          "M": "ASM001-NV-M",
+          "S": "ASM001-NV-S",
+          "L": "ASM001-NV-L",
+          "XL": "ASM001-NV-XL",
+          "XXL": "ASM001-NV-XXL"
+        },
+        "colorHex": "#1A237E",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778602218/jsjibf7lyc3pvlwy5nxp.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778602219/qxlcnpdvxjla4uo9412p.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112812/qf5wg94mbzz8mlaqgvuq.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112814/c8qflljnulp3phkg7qwt.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778602219/qxlcnpdvxjla4uo9412p.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112812/qf5wg94mbzz8mlaqgvuq.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112814/c8qflljnulp3phkg7qwt.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112811/nvksrickldh3poqka3sl.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "M": 10,
+          "S": 10,
+          "L": 9,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-so-mi",
+    "parentSku": "ASM001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "M",
+      "S",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [
+      {
+        "userId": "6a08627744785df17a7eb1d6",
+        "orderId": "6a0e8bc4194d22dbcc549afe",
+        "rating": 5,
+        "comment": "vải đẹp ",
+        "tags": [
+          "Đúng size",
+          "Giao hàng nhanh",
+          "Màu sắc chuẩn"
+        ],
+        "images": [],
+        "createdAt": 1779771828343
+      }
+    ],
+    "numReviews": 1,
+    "rating": 5,
+    "date": 1778602221006,
+    "__v": 3,
+    "tags": []
+  },
+  {
+    "_id": "6a09513b043f335e337a695b",
+    "name": "áo thun ",
+    "description": "áo thun vải đẹp ",
+    "price": 199000,
+    "discountPercent": 0,
+    "salePrice": 199000,
+    "isSpecialSale": false,
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995509/c5eboqmkeombi3cm14hb.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995512/jrwmcspbjl3jfmb48fdj.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995514/jkncjijlqe4qpyxvy4zo.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995514/yo004zctnuhfczp0hg7o.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995513/s2urpzlfxvrnotg8up5f.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995513/vlxxaqkzuibesengkn3j.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995510/odiz3elwdwebmmaucp9t.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Xanh Navy (Than)",
+        "sku": "AT001-NV-S",
+        "skuBySize": {
+          "S": "AT001-NV-S",
+          "M": "AT001-NV-M",
+          "L": "AT001-NV-L",
+          "XL": "AT001-NV-XL",
+          "XXL": "AT001-NV-XXL"
+        },
+        "colorHex": "#1A237E",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995508/tmrtjboaio29mrduomar.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995509/c5eboqmkeombi3cm14hb.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995512/jrwmcspbjl3jfmb48fdj.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995514/jkncjijlqe4qpyxvy4zo.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995514/yo004zctnuhfczp0hg7o.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995513/s2urpzlfxvrnotg8up5f.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995513/vlxxaqkzuibesengkn3j.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995510/odiz3elwdwebmmaucp9t.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995509/c5eboqmkeombi3cm14hb.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995512/jrwmcspbjl3jfmb48fdj.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995514/jkncjijlqe4qpyxvy4zo.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995514/yo004zctnuhfczp0hg7o.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995513/s2urpzlfxvrnotg8up5f.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995513/vlxxaqkzuibesengkn3j.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778995510/odiz3elwdwebmmaucp9t.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 4,
+          "L": 5,
+          "XL": 2,
+          "XXL": 2
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-thun",
+    "parentSku": "AT001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1778995515031,
+    "__v": 1
+  },
+  {
+    "_id": "6a0957eb9beb49114e1c13cb",
+    "name": "áo khoác ",
+    "description": "áo khoác đẹp ",
+    "price": 300000,
+    "discountPercent": 0,
+    "salePrice": 300000,
+    "isSpecialSale": false,
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997223/q87ukzo1dn7bn4hhjv55.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/khxcoaw7uw8xhzxcxm7j.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/buimg64hjozl7d6awydf.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997226/i02pnm3q2poiwxihn8lc.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997227/cslx3f5wrqm2kf8ar09o.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997222/jprcvdlpwnhvjb3co1lm.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997224/mnuospjb5b1sff5z0lvg.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/d9mozkumje566jgyf3gj.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/jyt78ssbhpcdm9a4drsd.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997226/x78jy1gwf632teizlgar.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Vàng",
+        "sku": "AQ001-YE-S",
+        "skuBySize": {
+          "S": "AQ001-YE-S",
+          "M": "AQ001-YE-M",
+          "L": "AQ001-YE-L",
+          "XL": "AQ001-YE-XL",
+          "XXL": "AQ001-YE-XXL"
+        },
+        "colorHex": "#FFEB3B",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997222/jjey6blndvbtjlwt4bvi.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997223/q87ukzo1dn7bn4hhjv55.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/khxcoaw7uw8xhzxcxm7j.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/buimg64hjozl7d6awydf.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997226/i02pnm3q2poiwxihn8lc.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997227/cslx3f5wrqm2kf8ar09o.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997223/q87ukzo1dn7bn4hhjv55.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/khxcoaw7uw8xhzxcxm7j.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/buimg64hjozl7d6awydf.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997226/i02pnm3q2poiwxihn8lc.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997227/cslx3f5wrqm2kf8ar09o.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997224/dscq8ifl81ku2c6rkuin.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "L": 0,
+          "XL": 5,
+          "XXL": 5
+        }
+      },
+      {
+        "colorName": "Kem/Be",
+        "sku": "AQ001-BE-S",
+        "skuBySize": {
+          "S": "AQ001-BE-S",
+          "M": "AQ001-BE-M",
+          "L": "AQ001-BE-L",
+          "XL": "AQ001-BE-XL",
+          "XXL": "AQ001-BE-XXL"
+        },
+        "colorHex": "#F5F5DC",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997221/w5bbomehwdxkytur8r9w.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997222/jprcvdlpwnhvjb3co1lm.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997224/mnuospjb5b1sff5z0lvg.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/d9mozkumje566jgyf3gj.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/jyt78ssbhpcdm9a4drsd.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997226/x78jy1gwf632teizlgar.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997222/jprcvdlpwnhvjb3co1lm.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997224/mnuospjb5b1sff5z0lvg.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/d9mozkumje566jgyf3gj.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997225/jyt78ssbhpcdm9a4drsd.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997226/x78jy1gwf632teizlgar.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778997223/q9hqfvt6wh66uueqve0s.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "L": 5,
+          "XL": 5,
+          "XXL": 5
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-khoac-gio",
+    "parentSku": "AQ001",
+    "subCategory": "Outerwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [
+      {
+        "userId": "6a08627744785df17a7eb1d6",
+        "orderId": "6a0e8c8d194d22dbcc549bad",
+        "rating": 5,
+        "comment": "",
+        "tags": [
+          "Vải đẹp",
+          "Giao hàng nhanh",
+          "Đúng size",
+          "Màu sắc chuẩn"
+        ],
+        "images": [],
+        "createdAt": 1779768861019
+      }
+    ],
+    "numReviews": 1,
+    "rating": 5,
+    "date": 1778997227457,
+    "__v": 6,
+    "tags": []
+  },
+  {
+    "_id": "6a1530ed6e5fb50b473bd957",
+    "name": "áo thun ",
+    "description": "vải đẹp",
+    "price": 150000,
+    "discountPercent": 25,
+    "salePrice": 112500,
+    "isSpecialSale": true,
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773674/oermdqclndbcnzjwhe1t.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773676/qqbenmafjgr3begz2itz.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/mtiog8zin0y5u2mrwzwb.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/cfd0lpuuycanjkwsv16t.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/fpzaizt6ovaxczugjuj8.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/pjx9oi3bcpuyjabyarzc.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Hồng",
+        "sku": "AT001-PI-S",
+        "skuBySize": {
+          "S": "AT001-PI-S",
+          "M": "AT001-PI-M",
+          "L": "AT001-PI-L",
+          "XL": "AT001-PI-XL",
+          "XXL": "AT001-PI-XXL"
+        },
+        "colorHex": "#FFC0CB",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773673/yzi13t91esvpigfut6nd.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773674/oermdqclndbcnzjwhe1t.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773676/qqbenmafjgr3begz2itz.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/mtiog8zin0y5u2mrwzwb.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/cfd0lpuuycanjkwsv16t.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/fpzaizt6ovaxczugjuj8.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/pjx9oi3bcpuyjabyarzc.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773674/oermdqclndbcnzjwhe1t.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773676/qqbenmafjgr3begz2itz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/mtiog8zin0y5u2mrwzwb.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/cfd0lpuuycanjkwsv16t.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/fpzaizt6ovaxczugjuj8.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773677/pjx9oi3bcpuyjabyarzc.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779773675/gicjw4tts8l7f0v31r6q.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 50,
+          "M": 41,
+          "L": 30,
+          "XL": 10,
+          "XXL": 20
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-ao-thun",
+    "parentSku": "AT001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1779773677716,
+    "__v": 6,
+    "tags": [
+      "scroll:special-sale-month",
+      "/sale?dept=Women",
+      "giảm đến 50%"
+    ]
+  },
+  {
+    "_id": "6a1537d56e5fb50b473bda69",
+    "name": "Áo thun",
+    "description": "áo vải đẹp ",
+    "price": 299000,
+    "discountPercent": 70,
+    "salePrice": 89700,
+    "isSpecialSale": false,
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775440/k0hyjuyajpkbw7agq2jv.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775442/oybzu3spyke6hx7gkbbt.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775443/xfpblaww2edvwxdrkfxa.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/vijfwbqkgfpzfchaks97.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/q2fjoyuaolupjjintin1.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/ctubvftrycgrtjdajrn6.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775440/fihmyakawijnhyogwpe3.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775443/edfph38a4vi7nws5uwsa.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/oxyzbkisaxiadwam2hyw.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/vkenhz6nlloxwyzkcc92.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/xppge8rl26zs9tsnacbp.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "AT001-D-S",
+        "skuBySize": {
+          "S": "AT001-D-S",
+          "M": "AT001-D-M",
+          "L": "AT001-D-L",
+          "XL": "AT001-D-XL",
+          "XXL": "AT001-D-XXL"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775440/v2jp33vjwlqluedu825t.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775440/k0hyjuyajpkbw7agq2jv.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775442/oybzu3spyke6hx7gkbbt.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775443/xfpblaww2edvwxdrkfxa.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/vijfwbqkgfpzfchaks97.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/q2fjoyuaolupjjintin1.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/ctubvftrycgrtjdajrn6.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775440/k0hyjuyajpkbw7agq2jv.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775442/oybzu3spyke6hx7gkbbt.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775443/xfpblaww2edvwxdrkfxa.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/vijfwbqkgfpzfchaks97.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/q2fjoyuaolupjjintin1.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775444/ctubvftrycgrtjdajrn6.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775441/nax79iwjbw9lpuypgvqf.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 16,
+          "L": 20,
+          "XL": 20,
+          "XXL": 20
+        }
+      },
+      {
+        "colorName": "Trắng",
+        "sku": "AT001-WH-S",
+        "skuBySize": {
+          "S": "AT001-WH-S",
+          "M": "AT001-WH-M",
+          "L": "AT001-WH-L",
+          "XL": "AT001-WH-XL",
+          "XXL": "AT001-WH-XXL"
+        },
+        "colorHex": "#FFFFFF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775439/a0lqpetvur4yfuvqzywj.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775440/fihmyakawijnhyogwpe3.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775443/edfph38a4vi7nws5uwsa.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/oxyzbkisaxiadwam2hyw.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/vkenhz6nlloxwyzkcc92.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/xppge8rl26zs9tsnacbp.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775440/fihmyakawijnhyogwpe3.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775443/edfph38a4vi7nws5uwsa.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/oxyzbkisaxiadwam2hyw.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/vkenhz6nlloxwyzkcc92.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775445/xppge8rl26zs9tsnacbp.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779775441/g2ejmljkyg07xhmqwjdu.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 30,
+          "L": 30,
+          "XL": 30,
+          "XXL": 30
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-ao-thun",
+    "parentSku": "AT001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1779775445855,
+    "__v": 3,
+    "tags": [
+      "/sale?dept=Women"
+    ]
+  },
+  {
+    "_id": "6a15403e6e5fb50b473bdb32",
+    "name": "Quần short",
+    "description": "Quần short thô kiểu dáng trendy tôn dáng người mặc.\r\nMàu sắc trẻ trung, năng động.\r\nChất liệu: 98% Polyester 2% Spandex",
+    "price": 199000,
+    "discountPercent": 0,
+    "salePrice": 199000,
+    "isSpecialSale": false,
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777595/i3sni8i75xriuxvybzu2.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777596/smjp2bxmzxwy7uqdx239.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777598/h8deywedu5y7zf0fjdoh.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777598/zzuxvjyxkuizfw2krty3.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Xám (Ghi)",
+        "sku": "QS001-GY-28",
+        "skuBySize": {
+          "28": "QS001-GY-28",
+          "29": "QS001-GY-29",
+          "30": "QS001-GY-30",
+          "31": "QS001-GY-31",
+          "32": "QS001-GY-32",
+          "33": "QS001-GY-33",
+          "34": "QS001-GY-34",
+          "36": "QS001-GY-36"
+        },
+        "colorHex": "#9E9E9E",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777594/wtulzmtx29qbvqacswmw.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777595/i3sni8i75xriuxvybzu2.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777596/smjp2bxmzxwy7uqdx239.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777598/h8deywedu5y7zf0fjdoh.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777598/zzuxvjyxkuizfw2krty3.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777595/i3sni8i75xriuxvybzu2.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777596/smjp2bxmzxwy7uqdx239.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777598/h8deywedu5y7zf0fjdoh.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777598/zzuxvjyxkuizfw2krty3.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779777596/vykuiwkcolng4c2vtndm.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "28": 10,
+          "29": 10,
+          "30": 10,
+          "31": 10,
+          "32": 10,
+          "33": 10,
+          "34": 10,
+          "36": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-short",
+    "parentSku": "QS001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "36"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1779777598593,
+    "__v": 0
+  },
+  {
+    "_id": "6a155aa29ae1f95fef2d0ebb",
+    "name": "quần short",
+    "description": "quần đẹp ",
+    "price": 255000,
+    "discountPercent": 0,
+    "salePrice": 255000,
+    "isSpecialSale": false,
+    "tags": [],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784350/pvdburgfggejuvn5ode5.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784352/ztvp8fczefzfrja9aa60.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784353/ezll2hbflib6ze6soqhx.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784353/n5jm1wmwxm311aafrodl.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784354/uyo46c5rkolo2zdqjhfz.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784354/i1adtxlbgtkcxefzetqv.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "QS001-D-28",
+        "skuBySize": {
+          "28": "QS001-D-28",
+          "29": "QS001-D-29",
+          "30": "QS001-D-30",
+          "31": "QS001-D-31",
+          "32": "QS001-D-32",
+          "33": "QS001-D-33",
+          "34": "QS001-D-34"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784350/oknkptosjyj5omnyxrzw.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784350/pvdburgfggejuvn5ode5.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784352/ztvp8fczefzfrja9aa60.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784353/ezll2hbflib6ze6soqhx.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784353/n5jm1wmwxm311aafrodl.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784354/uyo46c5rkolo2zdqjhfz.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784354/i1adtxlbgtkcxefzetqv.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784350/pvdburgfggejuvn5ode5.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784352/ztvp8fczefzfrja9aa60.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784353/ezll2hbflib6ze6soqhx.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784353/n5jm1wmwxm311aafrodl.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784354/uyo46c5rkolo2zdqjhfz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784354/i1adtxlbgtkcxefzetqv.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779784351/z55fzgvrbox16qzf1vhd.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "28": 12,
+          "29": 9,
+          "30": 9,
+          "31": 10,
+          "32": 10,
+          "33": 10,
+          "34": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-short",
+    "parentSku": "QS001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "bestseller": false,
+    "reviews": [
+      {
+        "userId": "6a08627744785df17a7eb1d6",
+        "orderId": "6a1e3f887985a3221107a9ce",
+        "productId": "6a155aa29ae1f95fef2d0ebb",
+        "variant_id": "30",
+        "size": "30",
+        "rating": 5,
+        "comment": "quá đẹp ",
+        "tags": [
+          "Vải đẹp",
+          "Giao hàng nhanh",
+          "Màu sắc chuẩn"
+        ],
+        "images": [],
+        "createdAt": 1780497262759
+      },
+      {
+        "userId": "6a08627744785df17a7eb1d6",
+        "orderId": "6a1e3f887985a3221107a9ce",
+        "productId": "6a155aa29ae1f95fef2d0ebb",
+        "variant_id": "29",
+        "size": "29",
+        "rating": 5,
+        "comment": "",
+        "tags": [
+          "Giao hàng nhanh",
+          "Đúng size"
+        ],
+        "images": [],
+        "createdAt": 1780367306120
+      },
+      {
+        "userId": "6a08627744785df17a7eb1d6",
+        "orderId": "6a1e3f887985a3221107a9ce",
+        "productId": "6a155aa29ae1f95fef2d0ebb",
+        "variant_id": "28",
+        "size": "28",
+        "rating": 5,
+        "comment": "đẹp ",
+        "tags": [
+          "Vải đẹp",
+          "Giao hàng nhanh",
+          "Đúng size",
+          "Màu sắc chuẩn"
+        ],
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1780367296/reviews/naaxj33osm71rrr7l3to.webp"
+        ],
+        "createdAt": 1780367297557
+      }
+    ],
+    "numReviews": 3,
+    "rating": 5,
+    "date": 1779784354176,
+    "__v": 12
+  },
+  {
+    "_id": "6a155f5bcd917562fd6b71d8",
+    "name": "quần short",
+    "description": "vải đẹp ",
+    "price": 199000,
+    "discountPercent": 0,
+    "salePrice": 199000,
+    "isSpecialSale": false,
+    "tags": [
+      "Sản phẩm mới về"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785560/oswlesebhpeaiwnz1zpa.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785562/rrsmmz4dw2v4y0tfydxq.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785563/rwvbxz0lfmjgzygpnbfo.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "QS001-D-28",
+        "skuBySize": {
+          "28": "QS001-D-28",
+          "29": "QS001-D-29",
+          "30": "QS001-D-30",
+          "31": "QS001-D-31",
+          "32": "QS001-D-32",
+          "33": "QS001-D-33",
+          "34": "QS001-D-34"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785559/vwqhmq7dgvys2jjvevt2.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785560/oswlesebhpeaiwnz1zpa.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785562/rrsmmz4dw2v4y0tfydxq.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785563/rwvbxz0lfmjgzygpnbfo.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785560/oswlesebhpeaiwnz1zpa.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785562/rrsmmz4dw2v4y0tfydxq.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785563/rwvbxz0lfmjgzygpnbfo.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1779785561/twb83wl3nrgegspy42kn.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "28": 2,
+          "29": 10,
+          "30": 10,
+          "31": 10,
+          "32": 10,
+          "33": 10,
+          "34": 9
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-short",
+    "parentSku": "QS001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "bestseller": false,
+    "reviews": [
+      {
+        "userId": "6a1cf8bf8090df3b3c45adb6",
+        "orderId": "6a28be18db9f6e02c9d00342",
+        "productId": "6a155f5bcd917562fd6b71d8",
+        "variant_id": "28",
+        "size": "28",
+        "rating": 5,
+        "comment": "",
+        "tags": [
+          "Giao hàng nhanh",
+          "Màu sắc chuẩn"
+        ],
+        "images": [],
+        "createdAt": 1781062857959
+      },
+      {
+        "userId": "6a08627744785df17a7eb1d6",
+        "orderId": "6a1e3679c442880d4ddb6be9",
+        "rating": 5,
+        "comment": "quá đẹp ",
+        "tags": [
+          "Vải đẹp",
+          "Giao hàng nhanh",
+          "Đúng size",
+          "Màu sắc chuẩn"
+        ],
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1780364985/sbktzm2odkgnlry29qo6.webp"
+        ],
+        "createdAt": 1780364986622
+      }
+    ],
+    "numReviews": 2,
+    "rating": 5,
+    "date": 1779785563650,
+    "__v": 10
+  },
+  {
+    "_id": "6a29723fa4184d389d12a976",
+    "name": "Áo POLO ",
+    "description": "Áo vải đẹp,mát",
+    "price": 199000,
+    "discountPercent": 0,
+    "salePrice": 199000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101112/logtdywfiotspmsrgbmw.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101115/c0qlw9aisismf47udved.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101119/xaym1bpke5pv7aaxlkhb.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101118/mjne5qfbw87jcikgtyif.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Hồng",
+        "sku": "APL001-PI-S",
+        "skuBySize": {
+          "S": "APL001-PI-S",
+          "M": "APL001-PI-M",
+          "L": "APL001-PI-L",
+          "XL": "APL001-PI-XL",
+          "XXL": "APL001-PI-XXL"
+        },
+        "colorHex": "#FFC0CB",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101111/ngprlytrtdl3hntjplv6.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101112/logtdywfiotspmsrgbmw.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101115/c0qlw9aisismf47udved.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101119/xaym1bpke5pv7aaxlkhb.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101118/mjne5qfbw87jcikgtyif.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101112/logtdywfiotspmsrgbmw.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101115/c0qlw9aisismf47udved.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101119/xaym1bpke5pv7aaxlkhb.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101118/mjne5qfbw87jcikgtyif.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781101113/cndfn21m8m2apjtvasit.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 9,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-polo",
+    "parentSku": "APL001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1781101119590,
+    "__v": 1
+  },
+  {
+    "_id": "6a29a4640b6856dfd0c8fe78",
+    "name": "Áo sơ mi",
+    "description": "áo sơ mi vải cực đẹp",
+    "price": 500000,
+    "discountPercent": 0,
+    "salePrice": 500000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113953/mqnnzbs9btpml3ooiljs.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/rrvewmrylfgzeuq5pu57.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/l1cpjqqdd4cntzekxqpo.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113956/vccrgrhv3npl7om334lo.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/p72khau1bysrzuj1t0fz.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Trắng",
+        "sku": "ASM001-WH-S",
+        "skuBySize": {
+          "S": "ASM001-WH-S",
+          "M": "ASM001-WH-M",
+          "L": "ASM001-WH-L",
+          "XL": "ASM001-WH-XL",
+          "XXL": "ASM001-WH-XXL"
+        },
+        "colorHex": "#FFFFFF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113952/wx8ij6xo9dow1isfnho6.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113953/mqnnzbs9btpml3ooiljs.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/rrvewmrylfgzeuq5pu57.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/l1cpjqqdd4cntzekxqpo.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113956/vccrgrhv3npl7om334lo.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/p72khau1bysrzuj1t0fz.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113953/mqnnzbs9btpml3ooiljs.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/rrvewmrylfgzeuq5pu57.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/l1cpjqqdd4cntzekxqpo.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113956/vccrgrhv3npl7om334lo.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113955/p72khau1bysrzuj1t0fz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1781113954/raojcrxaiigf5avllim5.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 8,
+          "M": 8,
+          "L": 10,
+          "XL": 10,
+          "XXL": 30
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-so-mi",
+    "parentSku": "ASM001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1781113956817,
+    "__v": 4
+  },
+  {
+    "_id": "6a38d955453f89b40fef8733",
+    "name": "Áo khoác 2 lớp",
+    "description": "Áo khoác 2 lớp dạ cổ bẻ thêu logo tay ",
+    "price": 290000,
+    "discountPercent": 0,
+    "salePrice": 290000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110543/awqitocgzjhj6aij9o1z.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110545/t7ujklpqfer8auhhzk3d.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110548/onon6swhsnlmqppnmojv.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/tj72bh32amyzz3wg2b2w.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110546/uitdrssuppbwvy0ytinb.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/yzfyacxqsibyujqtcvsu.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110543/tlkj89dsroasfwgvuqr6.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110545/fodqq9yfil34blopvcdw.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110548/mbwbxkzeushwyeechlty.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/se6eayhha3gsohrb1wch.jpg"
+    ],
+    "variants": [
+      {
+        "colorName": "Kem/Be",
+        "sku": "AKh001-BE-S",
+        "skuBySize": {
+          "S": "AKh001-BE-S",
+          "M": "AKh001-BE-M",
+          "L": "AKh001-BE-L",
+          "XL": "AKh001-BE-XL",
+          "XXL": "AKh001-BE-XXL"
+        },
+        "colorHex": "#F5F5DC",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110542/wuw5fob2aaubmgvybgou.jpg",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110543/awqitocgzjhj6aij9o1z.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110545/t7ujklpqfer8auhhzk3d.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110548/onon6swhsnlmqppnmojv.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/tj72bh32amyzz3wg2b2w.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110546/uitdrssuppbwvy0ytinb.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/yzfyacxqsibyujqtcvsu.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110543/awqitocgzjhj6aij9o1z.jpg",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110545/t7ujklpqfer8auhhzk3d.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110548/onon6swhsnlmqppnmojv.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/tj72bh32amyzz3wg2b2w.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110546/uitdrssuppbwvy0ytinb.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/yzfyacxqsibyujqtcvsu.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110544/d2yg4wfogx088n6fkrs6.jpg",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      },
+      {
+        "colorName": "Xám (Ghi)",
+        "sku": "AKh001-GY-S",
+        "skuBySize": {
+          "S": "AKh001-GY-S",
+          "M": "AKh001-GY-M",
+          "L": "AKh001-GY-L",
+          "XL": "AKh001-GY-XL",
+          "XXL": "AKh001-GY-XXL"
+        },
+        "colorHex": "#9E9E9E",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110542/uwb5fizcynqxwfacybn8.jpg",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110543/tlkj89dsroasfwgvuqr6.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110545/fodqq9yfil34blopvcdw.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110548/mbwbxkzeushwyeechlty.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/se6eayhha3gsohrb1wch.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110543/tlkj89dsroasfwgvuqr6.jpg",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110545/fodqq9yfil34blopvcdw.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110548/mbwbxkzeushwyeechlty.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110547/se6eayhha3gsohrb1wch.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782110544/r0dbppormkbbeogpxktn.jpg",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-khoac-gio",
+    "parentSku": "AKh001",
+    "subCategory": "Outerwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782110549909,
+    "__v": 0
+  },
+  {
+    "_id": "6a38db65453f89b40fef878e",
+    "name": "Quần tây relaxedfit",
+    "description": "Quần tây relaxedfit trơn phối cạp chun thêu logo",
+    "price": 299000,
+    "discountPercent": 0,
+    "salePrice": 299000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111071/hgbzdgyxvyo5mw5lsayt.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111073/wwzttn4va7cgnyrh1wpv.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111075/jxxemecghvnobms5vux4.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111076/xcok7dfo75g3ojp2zbkh.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111076/hi4cr2udswvmnzy1l60w.jpg"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "QT002-D-28",
+        "skuBySize": {
+          "28": "QT002-D-28",
+          "29": "QT002-D-29",
+          "30": "QT002-D-30",
+          "31": "QT002-D-31",
+          "32": "QT002-D-32",
+          "33": "QT002-D-33",
+          "34": "QT002-D-34"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111070/ejt8edumksgtbzud3trc.jpg",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111071/hgbzdgyxvyo5mw5lsayt.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111073/wwzttn4va7cgnyrh1wpv.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111075/jxxemecghvnobms5vux4.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111076/xcok7dfo75g3ojp2zbkh.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111076/hi4cr2udswvmnzy1l60w.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111071/hgbzdgyxvyo5mw5lsayt.jpg",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111073/wwzttn4va7cgnyrh1wpv.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111075/jxxemecghvnobms5vux4.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111076/xcok7dfo75g3ojp2zbkh.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111076/hi4cr2udswvmnzy1l60w.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111072/twquq3kcku1cbaahyvml.jpg",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "28": 10,
+          "29": 10,
+          "30": 10,
+          "31": 10,
+          "32": 10,
+          "33": 10,
+          "34": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-tay",
+    "parentSku": "QT002",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782111077826,
+    "__v": 0
+  },
+  {
+    "_id": "6a38dc78453f89b40fef87ec",
+    "name": "Quần short đũi basic",
+    "description": "Quần short đũi basic vải đẹp ",
+    "price": 150000,
+    "discountPercent": 0,
+    "salePrice": 150000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111347/ja0rvxrb4yfrrmgoucyb.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111349/cyye5j2iht5gt1qc0ejo.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111350/d8kidlo7an9wugbhj2c7.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111351/rzkbz8pu17zpgwjwtgdc.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111349/s7qba2yhqtyqagnr2fym.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111350/yt8pnukee1utrrttqkfu.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "QSJ001-D-28",
+        "skuBySize": {
+          "28": "QSJ001-D-28",
+          "29": "QSJ001-D-29",
+          "30": "QSJ001-D-30",
+          "31": "QSJ001-D-31",
+          "32": "QSJ001-D-32",
+          "33": "QSJ001-D-33"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111345/arcjulevxhkscstgzpae.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111347/ja0rvxrb4yfrrmgoucyb.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111349/cyye5j2iht5gt1qc0ejo.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111350/d8kidlo7an9wugbhj2c7.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111351/rzkbz8pu17zpgwjwtgdc.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111349/s7qba2yhqtyqagnr2fym.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111350/yt8pnukee1utrrttqkfu.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111347/ja0rvxrb4yfrrmgoucyb.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111349/cyye5j2iht5gt1qc0ejo.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111350/d8kidlo7an9wugbhj2c7.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111351/rzkbz8pu17zpgwjwtgdc.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111349/s7qba2yhqtyqagnr2fym.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111350/yt8pnukee1utrrttqkfu.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782111348/gavbefhhe54wql723fxs.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "28": 10,
+          "29": 10,
+          "30": 10,
+          "31": 10,
+          "32": 10,
+          "33": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-short",
+    "parentSku": "QSJ001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782111352495,
+    "__v": 0
+  },
+  {
+    "_id": "6a38df70453f89b40fef88a9",
+    "name": "áo khoác gió ",
+    "description": "Áo khoác gió vãi đẹp ",
+    "price": 399000,
+    "discountPercent": 0,
+    "salePrice": 399000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112107/mgurgv5t0qu72gmtxdmc.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112109/c07vlzdopqs7cvhi6nys.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112109/jssivgjiaestyal96ax8.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112110/z6wzu757z4auoovotepw.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112110/nlhc9tvangt2xzjx1sls.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112190/xdujj78ezvaj5xetltc3.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112192/bfo6yhox9i61wwpjni5e.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/kpeplaj2gceb2bpx0cac.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/ri4fnwzfidd27jlpotvn.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/yf0qqpdiynqqr0kcavrz.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "màu tím nhạt",
+        "sku": "AKH001-LV-M",
+        "skuBySize": {
+          "M": "AKH001-LV-M",
+          "S": "AKH001-LV-S",
+          "L": "AKH001-LV-L",
+          "XL": "AKH001-LV-XL",
+          "XXL": "AKH001-LV-XXL"
+        },
+        "colorHex": "#D7C5E0",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112106/kkri9yyhhmahogysbuwd.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112107/mgurgv5t0qu72gmtxdmc.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112109/c07vlzdopqs7cvhi6nys.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112109/jssivgjiaestyal96ax8.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112110/z6wzu757z4auoovotepw.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112110/nlhc9tvangt2xzjx1sls.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112107/mgurgv5t0qu72gmtxdmc.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112109/c07vlzdopqs7cvhi6nys.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112109/jssivgjiaestyal96ax8.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112110/z6wzu757z4auoovotepw.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112110/nlhc9tvangt2xzjx1sls.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112108/okkicqttqzopmqmbeug9.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "M": 10,
+          "S": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      },
+      {
+        "colorName": "Hồng",
+        "sku": "AKH001-PI-M",
+        "skuBySize": {
+          "M": "AKH001-PI-M",
+          "S": "AKH001-PI-S",
+          "L": "AKH001-PI-L",
+          "XL": "AKH001-PI-XL",
+          "XXL": "AKH001-PI-XXL"
+        },
+        "colorHex": "#FFC0CB",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112189/dgygr4rodyn3adr88sz7.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112190/xdujj78ezvaj5xetltc3.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112192/bfo6yhox9i61wwpjni5e.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/kpeplaj2gceb2bpx0cac.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/ri4fnwzfidd27jlpotvn.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/yf0qqpdiynqqr0kcavrz.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112190/xdujj78ezvaj5xetltc3.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112192/bfo6yhox9i61wwpjni5e.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/kpeplaj2gceb2bpx0cac.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/ri4fnwzfidd27jlpotvn.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112193/yf0qqpdiynqqr0kcavrz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112191/jx5ywymbutiuiw5u2unr.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "M": 10,
+          "S": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-ao-khoac",
+    "parentSku": "AKH001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "M",
+      "S",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782112112067,
+    "__v": 1
+  },
+  {
+    "_id": "6a38e06b453f89b40fef88f6",
+    "name": "áo khoác jean",
+    "description": "Áo khoác jean đẹp ",
+    "price": 399000,
+    "discountPercent": 0,
+    "salePrice": 399000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112358/qaqoadcnijli6pijux5n.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112360/hzgwj5qjn3krgzumheda.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112362/rceom6nrqrkeas3pqmfh.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112362/ygcyfgqwpveto9ckpkvv.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "AKH001-D-S",
+        "skuBySize": {
+          "S": "AKH001-D-S",
+          "M": "AKH001-D-M",
+          "L": "AKH001-D-L",
+          "XL": "AKH001-D-XL",
+          "XXL": "AKH001-D-XXL"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112358/yixytgkrvdwhgqbiitb4.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112358/qaqoadcnijli6pijux5n.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112360/hzgwj5qjn3krgzumheda.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112362/rceom6nrqrkeas3pqmfh.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112362/ygcyfgqwpveto9ckpkvv.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112358/qaqoadcnijli6pijux5n.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112360/hzgwj5qjn3krgzumheda.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112362/rceom6nrqrkeas3pqmfh.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112362/ygcyfgqwpveto9ckpkvv.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112359/q3xjmehomuaehm8gn0px.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-khoac-jean",
+    "parentSku": "AKH001",
+    "subCategory": "Outerwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782112363953,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e126453f89b40fef892c",
+    "name": "Áo sơ mi ",
+    "description": "Áo sơ mi đẹp hàng mới 2026",
+    "price": 500000,
+    "discountPercent": 0,
+    "salePrice": 500000,
+    "isSpecialSale": false,
+    "tags": [
+      "/collection"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112545/cdx08tnka4gbqe3zghrc.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112548/fbr1kniw2dgv5dd0abjf.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112548/kf8unwc25sovsgkow51z.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/bo09m7fhpkszort7webc.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/xb3epghhpedotydjelto.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/ypy50djnyt5mtuxihhkm.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Hồng",
+        "sku": "ASM001-PI-S",
+        "skuBySize": {
+          "S": "ASM001-PI-S",
+          "M": "ASM001-PI-M",
+          "L": "ASM001-PI-L",
+          "XL": "ASM001-PI-XL",
+          "XXL": "ASM001-PI-XXL"
+        },
+        "colorHex": "#FFC0CB",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112544/cbs6fbagvmjvftnladbd.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112545/cdx08tnka4gbqe3zghrc.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112548/fbr1kniw2dgv5dd0abjf.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112548/kf8unwc25sovsgkow51z.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/bo09m7fhpkszort7webc.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/xb3epghhpedotydjelto.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/ypy50djnyt5mtuxihhkm.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112545/cdx08tnka4gbqe3zghrc.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112548/fbr1kniw2dgv5dd0abjf.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112548/kf8unwc25sovsgkow51z.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/bo09m7fhpkszort7webc.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/xb3epghhpedotydjelto.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112549/ypy50djnyt5mtuxihhkm.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782112546/ya3o6djwt7ssebggokiy.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-so-mi",
+    "parentSku": "ASM001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782112550818,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e375453f89b40fef89d8",
+    "name": "Quần short nữ ",
+    "description": "Quần short mới về vải cực đẹp",
+    "price": 300000,
+    "discountPercent": 10,
+    "salePrice": 270000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113136/zevmm56o2bgi9oq4gprx.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113138/mgwwc0mcdcyqmynq3eaz.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113139/vn9c8vrp2ijwb6xqpat2.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113139/grmvygevqxtysuajfhrx.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Xanh Navy (Than)",
+        "sku": "QSN001-NV-XXL",
+        "skuBySize": {
+          "XXL": "QSN001-NV-XXL",
+          "XL": "QSN001-NV-XL",
+          "L": "QSN001-NV-L",
+          "M": "QSN001-NV-M",
+          "S": "QSN001-NV-S"
+        },
+        "colorHex": "#000080",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113135/wkpkxemadvdeshzn6fjm.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113136/zevmm56o2bgi9oq4gprx.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113138/mgwwc0mcdcyqmynq3eaz.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113139/vn9c8vrp2ijwb6xqpat2.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113139/grmvygevqxtysuajfhrx.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113136/zevmm56o2bgi9oq4gprx.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113138/mgwwc0mcdcyqmynq3eaz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113139/vn9c8vrp2ijwb6xqpat2.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113139/grmvygevqxtysuajfhrx.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113137/genouvlolbessoswovgz.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "XXL": 10,
+          "XL": 10,
+          "L": 10,
+          "M": 10,
+          "S": 10
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-quan-short",
+    "parentSku": "QSN001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "XXL",
+      "XL",
+      "L",
+      "M",
+      "S"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782113141335,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e4bb453f89b40fef8a32",
+    "name": "Áo thun",
+    "description": "Áo thun vải đẹp, mát ",
+    "price": 200000,
+    "discountPercent": 20,
+    "salePrice": 160000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:best-sellers"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113456/q7yramu3glg1ntgt9xqp.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113458/iu7nke7pxdr5hggkdz0y.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113459/xsb8yf9ys9dn4aplmx1x.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113460/wgs2bha5qqqap6gejea2.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113460/ikos5qmzesj2jolsjhee.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113457/oznbg878rckbdujfltbu.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/ouu7xs0ozeamf9u8laiy.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/zbqnjwvgnvcobboptock.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/mwotwgdsx6ladrownr6c.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113465/tppjly4ijs2yirbznfam.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Kem/Be",
+        "sku": "AT001-BE-S",
+        "skuBySize": {
+          "S": "AT001-BE-S",
+          "M": "AT001-BE-M",
+          "L": "AT001-BE-L",
+          "XL": "AT001-BE-XL",
+          "XXL": "AT001-BE-XXL"
+        },
+        "colorHex": "#F5F5DC",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113455/ywe0plu1zncnux7xw83f.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113456/q7yramu3glg1ntgt9xqp.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113458/iu7nke7pxdr5hggkdz0y.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113459/xsb8yf9ys9dn4aplmx1x.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113460/wgs2bha5qqqap6gejea2.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113460/ikos5qmzesj2jolsjhee.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113456/q7yramu3glg1ntgt9xqp.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113458/iu7nke7pxdr5hggkdz0y.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113459/xsb8yf9ys9dn4aplmx1x.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113460/wgs2bha5qqqap6gejea2.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113460/ikos5qmzesj2jolsjhee.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113457/hi29i4r1q6tp9klj8mcc.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      },
+      {
+        "colorName": "xanh dương",
+        "sku": "AT001-XD-S",
+        "skuBySize": {
+          "S": "AT001-XD-S",
+          "M": "AT001-XD-M",
+          "XL": "AT001-XD-XL",
+          "L": "AT001-XD-L",
+          "XXL": "AT001-XD-XXL"
+        },
+        "colorHex": "#0000FF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113455/hg9lf11mhgcj6judune3.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113457/oznbg878rckbdujfltbu.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/ouu7xs0ozeamf9u8laiy.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/zbqnjwvgnvcobboptock.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/mwotwgdsx6ladrownr6c.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113465/tppjly4ijs2yirbznfam.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113457/oznbg878rckbdujfltbu.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/ouu7xs0ozeamf9u8laiy.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/zbqnjwvgnvcobboptock.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113464/mwotwgdsx6ladrownr6c.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113465/tppjly4ijs2yirbznfam.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113462/ck07glwfpmibawtzg9ct.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "XL": 10,
+          "L": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-ao-thun",
+    "parentSku": "AT001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": true,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782113467522,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e572453f89b40fef8a70",
+    "name": "Áo thun nam",
+    "description": "Áo thun vải thái đẹp",
+    "price": 250000,
+    "discountPercent": 10,
+    "salePrice": 225000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113645/tblxh8tdwwrv5oasizw7.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113647/w44gz18xeybjj2d5ykcz.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113648/w8u4eunzfugptjjkqbcz.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113649/lm320zz8edpjl9n3ngo3.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113648/cjdewyretckph8pr4kkb.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Kem/Be",
+        "sku": "ATN001-BE-S",
+        "skuBySize": {
+          "S": "ATN001-BE-S",
+          "L": "ATN001-BE-L",
+          "M": "ATN001-BE-M",
+          "XL": "ATN001-BE-XL",
+          "XXL": "ATN001-BE-XXL"
+        },
+        "colorHex": "#F5F5DC",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113644/w1w319uijnfzehylfmdh.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113645/tblxh8tdwwrv5oasizw7.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113647/w44gz18xeybjj2d5ykcz.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113648/w8u4eunzfugptjjkqbcz.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113649/lm320zz8edpjl9n3ngo3.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113648/cjdewyretckph8pr4kkb.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113645/tblxh8tdwwrv5oasizw7.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113647/w44gz18xeybjj2d5ykcz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113648/w8u4eunzfugptjjkqbcz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113649/lm320zz8edpjl9n3ngo3.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113648/cjdewyretckph8pr4kkb.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113646/wdgkze8zt3d1fi6j4am1.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "L": 10,
+          "M": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-thun",
+    "parentSku": "ATN001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "L",
+      "M",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782113650544,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e622453f89b40fef8aa4",
+    "name": "Áo khoác nam ",
+    "description": "Áo khoác jean ",
+    "price": 450000,
+    "discountPercent": 10,
+    "salePrice": 405000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113821/ldqklxauoomhiyr2p7ck.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113823/bsjbpsa4ipeszn6hb4qa.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/pv7hw6otak03smlxlqjf.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/yge2oim84xa1ou2x5ncl.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/uonztlpd4q4utpzkvden.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113825/b7qfqsz17bqaxgoj5wsl.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/jobp3fhrmqr75xacgjzj.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "xanh dương",
+        "sku": "AKHJ001-XD-S",
+        "skuBySize": {
+          "S": "AKHJ001-XD-S",
+          "M": "AKHJ001-XD-M",
+          "L": "AKHJ001-XD-L",
+          "XL": "AKHJ001-XD-XL",
+          "XXL": "AKHJ001-XD-XXL"
+        },
+        "colorHex": "#0000FF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113820/mubuzriombbdgaatevcf.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113821/ldqklxauoomhiyr2p7ck.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113823/bsjbpsa4ipeszn6hb4qa.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/pv7hw6otak03smlxlqjf.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/yge2oim84xa1ou2x5ncl.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/uonztlpd4q4utpzkvden.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113825/b7qfqsz17bqaxgoj5wsl.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/jobp3fhrmqr75xacgjzj.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113821/ldqklxauoomhiyr2p7ck.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113823/bsjbpsa4ipeszn6hb4qa.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/pv7hw6otak03smlxlqjf.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/yge2oim84xa1ou2x5ncl.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/uonztlpd4q4utpzkvden.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113825/b7qfqsz17bqaxgoj5wsl.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113824/jobp3fhrmqr75xacgjzj.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782113822/z8bgflww8eo4fa7mvmix.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-khoac-jean",
+    "parentSku": "AKHJ001",
+    "subCategory": "Outerwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782113826970,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e737453f89b40fef8ae8",
+    "name": "quần short",
+    "description": "Quần short nam vải đẹp",
+    "price": 299000,
+    "discountPercent": 0,
+    "salePrice": 299000,
+    "isSpecialSale": true,
+    "tags": [
+      "scroll:special-sale-month"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114097/qw6e7ykxaltqk1k8p3xa.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114100/xzeyx4ctxqyftq55gs3w.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114101/jgeq6kickeqkjxds3dhk.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114101/u12poik6keu5vseqejkh.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114102/xsvjhq69sbmtx9hgcccz.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Kem/Be",
+        "sku": "QSN001-BE-S",
+        "skuBySize": {
+          "S": "QSN001-BE-S",
+          "M": "QSN001-BE-M",
+          "XL": "QSN001-BE-XL",
+          "L": "QSN001-BE-L",
+          "XXL": "QSN001-BE-XXL"
+        },
+        "colorHex": "#F5F5DC",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114096/kbxiulsg3wwg3xxqs2yj.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114097/qw6e7ykxaltqk1k8p3xa.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114100/xzeyx4ctxqyftq55gs3w.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114101/jgeq6kickeqkjxds3dhk.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114101/u12poik6keu5vseqejkh.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114102/xsvjhq69sbmtx9hgcccz.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114097/qw6e7ykxaltqk1k8p3xa.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114100/xzeyx4ctxqyftq55gs3w.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114101/jgeq6kickeqkjxds3dhk.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114101/u12poik6keu5vseqejkh.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114102/xsvjhq69sbmtx9hgcccz.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114098/bef3zum5m9yhclddoqww.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "XL": 5,
+          "L": 5,
+          "XXL": 5
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-short",
+    "parentSku": "QSN001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "S",
+      "M",
+      "XL",
+      "L",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782114103441,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e7ba453f89b40fef8b12",
+    "name": "Quần short",
+    "description": "Quần short mới về ",
+    "price": 299000,
+    "discountPercent": 0,
+    "salePrice": 299000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:best-sellers"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114230/kqbomvgtd9vbawl6i0uc.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114232/ua6cljpvostcg70c0ros.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114232/ozlsyqyd2up9vq5ltzkf.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "QSN001-D-S",
+        "skuBySize": {
+          "S": "QSN001-D-S",
+          "M": "QSN001-D-M",
+          "L": "QSN001-D-L",
+          "XL": "QSN001-D-XL",
+          "XXL": "QSN001-D-XXL"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114229/qboppyevraqtgnjqdb1c.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114230/kqbomvgtd9vbawl6i0uc.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114232/ua6cljpvostcg70c0ros.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114232/ozlsyqyd2up9vq5ltzkf.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114230/kqbomvgtd9vbawl6i0uc.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114232/ua6cljpvostcg70c0ros.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114232/ozlsyqyd2up9vq5ltzkf.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114231/lewskg6vvppm8g5naiow.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "L": 5,
+          "XL": 5,
+          "XXL": 5
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-quan-short",
+    "parentSku": "QSN001",
+    "subCategory": "Bottomwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": true,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782114234497,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e96d453f89b40fef8b50",
+    "name": "Áo khoác nhung tăm cổ bẻ",
+    "description": "Áo khoác nhung tăm cổ bẻ",
+    "price": 300000,
+    "discountPercent": 10,
+    "salePrice": 270000,
+    "isSpecialSale": true,
+    "tags": [
+      "scroll:special-sale-month"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114663/iop1hmvof3olmxozka7k.png",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114665/d1hgrj3khvzio57zyckx.png",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114667/bxcx4eksi4mag5lbagw2.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114667/dnoyk30ttbqllepzmlze.jpg"
+    ],
+    "variants": [
+      {
+        "colorName": "Nâu",
+        "sku": "AKHN001-BR-M",
+        "skuBySize": {
+          "M": "AKHN001-BR-M",
+          "S": "AKHN001-BR-S",
+          "XL": "AKHN001-BR-XL",
+          "XXL": "AKHN001-BR-XXL",
+          "L": "AKHN001-BR-L"
+        },
+        "colorHex": "#5D4037",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114662/ma0xlwfaomv9nqnhdsq5.png",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114663/iop1hmvof3olmxozka7k.png",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114665/d1hgrj3khvzio57zyckx.png",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114667/bxcx4eksi4mag5lbagw2.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114667/dnoyk30ttbqllepzmlze.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114663/iop1hmvof3olmxozka7k.png",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114665/d1hgrj3khvzio57zyckx.png",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114667/bxcx4eksi4mag5lbagw2.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114667/dnoyk30ttbqllepzmlze.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114664/l65wzbhlfoedrbax0l71.jpg",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "M": 5,
+          "S": 5,
+          "XL": 5,
+          "XXL": 5,
+          "L": 5
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-khoac-gio",
+    "parentSku": "AKHN001",
+    "subCategory": "Outerwear",
+    "sizes": [
+      "M",
+      "S",
+      "XL",
+      "XXL",
+      "L"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782114669225,
+    "__v": 0
+  },
+  {
+    "_id": "6a38ea4d453f89b40fef8b8c",
+    "name": "Sơ mi ngắn tay trơn",
+    "description": "Sơ mi ngắn tay trơn",
+    "price": 500000,
+    "discountPercent": 50,
+    "salePrice": 250000,
+    "isSpecialSale": true,
+    "tags": [
+      "scroll:special-sale-month"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114886/dwqens72vglrttszsxfp.png",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114889/lsvbr9dcr8fxbbydu7uv.png",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114891/upqoqhkbz211s0zt8wht.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114891/oioibdxw8m608uveeh8p.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114890/khoyeirsntyniprz26wp.jpg"
+    ],
+    "variants": [
+      {
+        "colorName": "xanh dương",
+        "sku": "ASMN001-XD-S",
+        "skuBySize": {
+          "S": "ASMN001-XD-S",
+          "M": "ASMN001-XD-M",
+          "L": "ASMN001-XD-L",
+          "XL": "ASMN001-XD-XL",
+          "XXL": "ASMN001-XD-XXL"
+        },
+        "colorHex": "#0000FF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114886/eeqw6hhyfyumltf9os08.png",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114886/dwqens72vglrttszsxfp.png",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114889/lsvbr9dcr8fxbbydu7uv.png",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114891/upqoqhkbz211s0zt8wht.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114891/oioibdxw8m608uveeh8p.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114890/khoyeirsntyniprz26wp.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114886/dwqens72vglrttszsxfp.png",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114889/lsvbr9dcr8fxbbydu7uv.png",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114891/upqoqhkbz211s0zt8wht.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114891/oioibdxw8m608uveeh8p.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114890/khoyeirsntyniprz26wp.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782114888/dlvtp8ok8f0orba6nfbv.jpg",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 10,
+          "M": 10,
+          "L": 10,
+          "XL": 10,
+          "XXL": 10
+        }
+      }
+    ],
+    "category": "Men",
+    "catalogSlug": "nam-ao-so-mi",
+    "parentSku": "ASMN001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782114893285,
+    "__v": 0
+  },
+  {
+    "_id": "6a38eb42453f89b40fef8bc2",
+    "name": "Áo sơ mi ngắn tay bé trai",
+    "description": "Áo sơ mi ngắn tay bé trai",
+    "price": 100000,
+    "discountPercent": 0,
+    "salePrice": 100000,
+    "isSpecialSale": false,
+    "tags": [
+      "/collection"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115132/tljxxpctf1nwsvrd2qjx.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115134/t2npxxyminujaoizptxb.png",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/lglliedtcazqovkmrp5q.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/bjphvuffewbtpme4lnxh.png",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/f1tl56pqpvvkd0kvhjx2.jpg"
+    ],
+    "variants": [
+      {
+        "colorName": "xanh dương",
+        "sku": "ASME001-XD-S",
+        "skuBySize": {
+          "S": "ASME001-XD-S",
+          "M": "ASME001-XD-M",
+          "L": "ASME001-XD-L",
+          "XL": "ASME001-XD-XL",
+          "XXL": "ASME001-XD-XXL"
+        },
+        "colorHex": "#0000FF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115130/igrzov591v7s6mnci4hz.jpg",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115132/tljxxpctf1nwsvrd2qjx.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115134/t2npxxyminujaoizptxb.png",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/lglliedtcazqovkmrp5q.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/bjphvuffewbtpme4lnxh.png",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/f1tl56pqpvvkd0kvhjx2.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115132/tljxxpctf1nwsvrd2qjx.jpg",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115134/t2npxxyminujaoizptxb.png",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/lglliedtcazqovkmrp5q.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/bjphvuffewbtpme4lnxh.png",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115136/f1tl56pqpvvkd0kvhjx2.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115133/jcedre70gzjvzkrw7wxl.png",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "L": 5,
+          "XL": 5,
+          "XXL": 5
+        }
+      }
+    ],
+    "category": "Kids",
+    "catalogSlug": "tre-ao",
+    "parentSku": "ASME001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782115138298,
+    "__v": 0
+  },
+  {
+    "_id": "6a38ebf3453f89b40fef8bf4",
+    "name": "áo thun nữ",
+    "description": "áo mới về",
+    "price": 200000,
+    "discountPercent": 20,
+    "salePrice": 160000,
+    "isSpecialSale": true,
+    "tags": [
+      "scroll:special-sale-month"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115308/dis2pculi3rayfakbud0.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115311/z79t7zptmsk1gqhfmup4.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115311/uyxirrnnx4er6dfgju5k.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115312/wbvd6uskwvjs3ftmlcjw.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115313/ctrheutuhxv6ya9oheic.webp",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115312/fbjplffdyiwk7kpcnhlj.webp"
+    ],
+    "variants": [
+      {
+        "colorName": "Đen",
+        "sku": "ATN001-D-S",
+        "skuBySize": {
+          "S": "ATN001-D-S",
+          "M": "ATN001-D-M",
+          "L": "ATN001-D-L",
+          "XL": "ATN001-D-XL",
+          "XXL": "ATN001-D-XXL"
+        },
+        "colorHex": "#000000",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115307/g27jdvsgpotfxd9kng2t.webp",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115308/dis2pculi3rayfakbud0.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115311/z79t7zptmsk1gqhfmup4.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115311/uyxirrnnx4er6dfgju5k.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115312/wbvd6uskwvjs3ftmlcjw.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115313/ctrheutuhxv6ya9oheic.webp",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115312/fbjplffdyiwk7kpcnhlj.webp"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115308/dis2pculi3rayfakbud0.webp",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115311/z79t7zptmsk1gqhfmup4.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115311/uyxirrnnx4er6dfgju5k.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115312/wbvd6uskwvjs3ftmlcjw.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115313/ctrheutuhxv6ya9oheic.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115312/fbjplffdyiwk7kpcnhlj.webp",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115309/lud6e94femzviyroyjgu.webp",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "L": 5,
+          "XL": 5,
+          "XXL": 5
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-ao-thun",
+    "parentSku": "ATN001",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782115315580,
+    "__v": 0
+  },
+  {
+    "_id": "6a38edb0453f89b40fef8c60",
+    "name": "Áo sơmi giấu nút",
+    "description": "Áo sơmi giấu nút",
+    "price": 70000,
+    "discountPercent": 30,
+    "salePrice": 49000,
+    "isSpecialSale": true,
+    "tags": [
+      "scroll:special-sale-month"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115755/n8nqzwlnubo4cf8xr2mf.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115757/n0a3ee3xycrznal1pikr.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115759/fcuioclcxvquzzbslnc1.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115759/gfaammcn1j1fcftchhak.jpg"
+    ],
+    "variants": [
+      {
+        "colorName": "Trắng",
+        "sku": "ASM002-WH-S",
+        "skuBySize": {
+          "S": "ASM002-WH-S",
+          "M": "ASM002-WH-M",
+          "L": "ASM002-WH-L",
+          "XL": "ASM002-WH-XL",
+          "XXL": "ASM002-WH-XXL"
+        },
+        "colorHex": "#FFFFFF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115754/vtlk9isuirndu854rxam.jpg",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115755/n8nqzwlnubo4cf8xr2mf.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115757/n0a3ee3xycrznal1pikr.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115759/fcuioclcxvquzzbslnc1.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115759/gfaammcn1j1fcftchhak.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115755/n8nqzwlnubo4cf8xr2mf.jpg",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115757/n0a3ee3xycrznal1pikr.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115759/fcuioclcxvquzzbslnc1.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115759/gfaammcn1j1fcftchhak.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115756/ae2vw4epw07ihyujx8ye.jpg",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "L": 5,
+          "XL": 5,
+          "XXL": 5
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-ao-so-mi",
+    "parentSku": "ASM002",
+    "subCategory": "Topwear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782115760711,
+    "__v": 0
+  },
+  {
+    "_id": "6a38ee50453f89b40fef8c90",
+    "name": "Đầm A Xòe",
+    "description": "Đầm A Xòe",
+    "price": 300000,
+    "discountPercent": 0,
+    "salePrice": 300000,
+    "isSpecialSale": false,
+    "tags": [
+      "scroll:latest-products"
+    ],
+    "isActive": true,
+    "image": [
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115914/ypvu0yth5qqiqbptboc6.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115916/tjzt7dowxrjvtjeamlzp.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115918/bsbhujadjn5879ywqjk4.jpg",
+      "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115919/n8f2kaq4apyokwmurj6f.jpg"
+    ],
+    "variants": [
+      {
+        "colorName": "xanh dương",
+        "sku": "DAM001-XD-S",
+        "skuBySize": {
+          "S": "DAM001-XD-S",
+          "M": "DAM001-XD-M",
+          "L": "DAM001-XD-L",
+          "XL": "DAM001-XD-XL",
+          "XXL": "DAM001-XD-XXL"
+        },
+        "colorHex": "#0000FF",
+        "thumbnail": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115913/whfoyrjpsoiuejv2hzwp.jpg",
+        "images": [
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115914/ypvu0yth5qqiqbptboc6.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115916/tjzt7dowxrjvtjeamlzp.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115918/bsbhujadjn5879ywqjk4.jpg",
+          "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115919/n8f2kaq4apyokwmurj6f.jpg"
+        ],
+        "imageItems": [
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115914/ypvu0yth5qqiqbptboc6.jpg",
+            "is_main": true,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115916/tjzt7dowxrjvtjeamlzp.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115918/bsbhujadjn5879ywqjk4.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115919/n8f2kaq4apyokwmurj6f.jpg",
+            "is_main": false,
+            "is_hover": false
+          },
+          {
+            "url": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1782115915/czlkmrpo1fhot5bl5gjs.jpg",
+            "is_main": false,
+            "is_hover": true
+          }
+        ],
+        "stockBySize": {
+          "S": 5,
+          "M": 5,
+          "L": 5,
+          "XL": 5,
+          "XXL": 5
+        }
+      }
+    ],
+    "category": "Women",
+    "catalogSlug": "nu-vay-dam",
+    "parentSku": "DAM001",
+    "subCategory": "Dresswear",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "bestseller": false,
+    "reviews": [],
+    "numReviews": 0,
+    "rating": 0,
+    "date": 1782115920404,
+    "__v": 0
+  }
+]

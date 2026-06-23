@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "6a108325b5bfdc395a5192b3",
+    "text": "Hãy nhập mã KONGHER123 để được nhận ưu đãi đến  20%",
+    "linkUrl": "/sale",
+    "isActive": true,
+    "createdAt": 1779467045280,
+    "updatedAt": 1782108296989,
+    "__v": 0,
+    "sortOrder": 0
+  },
+  {
+    "_id": "6a2036548f0252d144ca618a",
+    "text": "giảm giá đến 50% dành cho sản phẩm nữ",
+    "linkUrl": "/collection?dept=Women",
+    "isActive": true,
+    "sortOrder": 2,
+    "createdAt": 1780495956901,
+    "updatedAt": 1780495956901,
+    "__v": 0
+  },
+  {
+    "_id": "6a38d0eb453f89b40fef865d",
+    "text": "Giảm 50% tự ngày 22/06-30/06",
+    "linkUrl": "scroll:special-sale-month",
+    "isActive": true,
+    "sortOrder": 1,
+    "createdAt": 1782108395186,
+    "updatedAt": 1782108404805,
+    "__v": 0
+  }
+]

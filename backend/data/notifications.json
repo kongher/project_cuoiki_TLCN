@@ -1,0 +1,324 @@
+[
+  {
+    "_id": "6a08864ec18ee45fd758f1bc",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Chúc mừng thành viên VIP",
+    "content": "Tài khoản của bạn đã được nâng hạng VIP và cộng 100 điểm thưởng.",
+    "type": "security",
+    "referenceId": "6a08627744785df17a7eb1d6",
+    "meta": {
+      "couponCode": "",
+      "discountLabel": ""
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T14:59:26.565Z",
+    "updatedAt": "2026-05-16T14:59:58.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a08868cc18ee45fd758f1dd",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá KONGHERGIAM (100.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "6a08833a92a5643c5d77a98f",
+    "meta": {
+      "couponCode": "KONGHERGIAM",
+      "discountLabel": "100.000đ"
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T15:00:28.230Z",
+    "updatedAt": "2026-05-16T15:00:58.701Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a0889332629ff9472052274",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá KONGHER (50.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "69ff0a3ea4a4c85fabd0b91b",
+    "meta": {
+      "couponCode": "KONGHER",
+      "discountLabel": "50.000đ"
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T15:11:47.142Z",
+    "updatedAt": "2026-05-16T15:12:08.550Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a088cce37fff374bb13b8d2",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá KONGHER (50.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "69ff0a3ea4a4c85fabd0b91b",
+    "meta": {
+      "couponCode": "KONGHER",
+      "discountLabel": "50.000đ"
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T15:27:10.161Z",
+    "updatedAt": "2026-05-16T15:27:18.028Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a088e1637fff374bb13b939",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá KONG123 (200.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "6a088e1137fff374bb13b937",
+    "meta": {
+      "couponCode": "KONG123",
+      "discountLabel": "200.000đ"
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T15:32:38.895Z",
+    "updatedAt": "2026-05-16T15:32:43.227Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a0890c9c204d54965220d38",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá KONG123 (200.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "6a088e1137fff374bb13b937",
+    "meta": {
+      "couponCode": "KONG123",
+      "discountLabel": "200.000đ"
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T15:44:09.365Z",
+    "updatedAt": "2026-05-16T15:44:14.714Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a0893ea5cdff9a0e2eec7ec",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá KONGHERGIAM (100.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "6a08833a92a5643c5d77a98f",
+    "meta": {
+      "couponCode": "KONGHERGIAM",
+      "discountLabel": "100.000đ"
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T15:57:30.463Z",
+    "updatedAt": "2026-05-16T15:57:34.241Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a0896871a2d1bc859802346",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá KONG123-VIP (200.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "6a0896791a2d1bc859802342",
+    "meta": {
+      "couponCode": "KONG123-VIP",
+      "discountLabel": "200.000đ"
+    },
+    "isRead": true,
+    "createdAt": "2026-05-16T16:08:39.665Z",
+    "updatedAt": "2026-05-16T16:08:43.887Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a0938c57a7ce385046c66ed",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Đổi mật khẩu thành công",
+    "content": "Mật khẩu tài khoản của bạn đã được cập nhật. Nếu không phải bạn, hãy liên hệ hỗ trợ.",
+    "type": "security",
+    "referenceId": "6a08627744785df17a7eb1d6",
+    "meta": {
+      "couponCode": "",
+      "discountLabel": ""
+    },
+    "isRead": true,
+    "createdAt": "2026-05-17T03:40:53.641Z",
+    "updatedAt": "2026-05-17T03:41:42.403Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a1cfee88f64f6095e1214da",
+    "userId": "6a1cf8bf8090df3b3c45adb6",
+    "title": "Đổi mật khẩu thành công",
+    "content": "Mật khẩu tài khoản của bạn đã được cập nhật. Nếu không phải bạn, hãy liên hệ hỗ trợ.",
+    "type": "security",
+    "referenceId": "6a1cf8bf8090df3b3c45adb6",
+    "meta": {
+      "couponCode": "",
+      "discountLabel": ""
+    },
+    "isRead": true,
+    "createdAt": "2026-06-01T03:39:20.382Z",
+    "updatedAt": "2026-06-09T04:24:43.711Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a1e3583c442880d4ddb6ba8",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Đánh giá đã có phản hồi",
+    "content": "Admin đã phản hồi đánh giá của bạn cho sản phẩm áo thun.",
+    "type": "review_reply",
+    "referenceId": "6a0e8bc4194d22dbcc549afe",
+    "meta": {
+      "orderId": "6a0e8bc4194d22dbcc549afe",
+      "productId": "6a094c0b1f919a8ed6099baf",
+      "productName": "áo thun",
+      "adminRepliedAt": 1780364675556,
+      "couponCode": "",
+      "discountLabel": ""
+    },
+    "isRead": true,
+    "createdAt": "2026-06-02T01:44:35.619Z",
+    "updatedAt": "2026-06-02T01:44:59.378Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a1e36edc442880d4ddb6c2d",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Đánh giá đã có phản hồi",
+    "content": "Admin đã phản hồi đánh giá của bạn cho sản phẩm quần short.",
+    "type": "review_reply",
+    "referenceId": "6a1e3679c442880d4ddb6be9",
+    "meta": {
+      "orderId": "6a1e3679c442880d4ddb6be9",
+      "productId": "6a155f5bcd917562fd6b71d8",
+      "productName": "quần short",
+      "adminRepliedAt": 1780365036860,
+      "couponCode": "",
+      "discountLabel": ""
+    },
+    "isRead": true,
+    "createdAt": "2026-06-02T01:50:37.164Z",
+    "updatedAt": "2026-06-02T01:50:44.948Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a1e40167985a3221107aa22",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Đánh giá đã có phản hồi",
+    "content": "Admin đã phản hồi đánh giá của bạn cho sản phẩm quần short.",
+    "type": "review_reply",
+    "referenceId": "6a1e3f887985a3221107a9ce",
+    "meta": {
+      "orderId": "6a1e3f887985a3221107a9ce",
+      "productId": "6a155aa29ae1f95fef2d0ebb",
+      "productName": "quần short",
+      "adminRepliedAt": 1780367382303,
+      "couponCode": "",
+      "discountLabel": ""
+    },
+    "isRead": true,
+    "createdAt": "2026-06-02T02:29:42.393Z",
+    "updatedAt": "2026-06-02T02:29:49.143Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a1e91af7985a3221107b1f0",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá TET2026 (300.000đ) qua email.",
+    "type": "voucher",
+    "referenceId": "6a1e91ab7985a3221107b1ee",
+    "meta": {
+      "couponCode": "TET2026",
+      "discountLabel": "300.000đ",
+      "orderId": "",
+      "productId": "",
+      "productName": "",
+      "adminRepliedAt": null
+    },
+    "isRead": true,
+    "createdAt": "2026-06-02T08:17:51.130Z",
+    "updatedAt": "2026-06-03T10:01:19.553Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a28dda62a8ac925289c3550",
+    "userId": "6a1cf8bf8090df3b3c45adb6",
+    "title": "Đánh giá đã có phản hồi",
+    "content": "Admin đã phản hồi đánh giá của bạn cho sản phẩm quần short.",
+    "type": "review_reply",
+    "referenceId": "6a28be18db9f6e02c9d00342",
+    "meta": {
+      "orderId": "6a28be18db9f6e02c9d00342",
+      "productId": "6a155f5bcd917562fd6b71d8",
+      "productName": "quần short",
+      "adminRepliedAt": 1781063077977,
+      "couponCode": "",
+      "discountLabel": ""
+    },
+    "isRead": true,
+    "createdAt": "2026-06-10T03:44:38.049Z",
+    "updatedAt": "2026-06-10T03:44:59.190Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a2acc051f4d2d5743601d21",
+    "userId": "6a1cf8bf8090df3b3c45adb6",
+    "title": "Chúc mừng thành viên VIP",
+    "content": "Tài khoản của bạn đã được nâng hạng VIP và cộng 100 điểm thưởng.",
+    "type": "security",
+    "referenceId": "6a1cf8bf8090df3b3c45adb6",
+    "meta": {
+      "couponCode": "",
+      "discountLabel": "",
+      "orderId": "",
+      "productId": "",
+      "productName": "",
+      "adminRepliedAt": null
+    },
+    "isRead": true,
+    "createdAt": "2026-06-11T14:53:57.827Z",
+    "updatedAt": "2026-06-11T14:54:13.329Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a2c299565826f7b103fa185",
+    "userId": "6a08627744785df17a7eb1d6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá dành cho khách VIP: FOREVER (giảm 10000%). Áp dụng khi thanh toán trên website.",
+    "type": "voucher",
+    "referenceId": "6a2c299165826f7b103fa182",
+    "meta": {
+      "couponCode": "FOREVER",
+      "discountLabel": "10000%",
+      "orderId": "",
+      "productId": "",
+      "productName": "",
+      "adminRepliedAt": null,
+      "rewardPoints": null
+    },
+    "isRead": false,
+    "createdAt": "2026-06-12T15:45:25.768Z",
+    "updatedAt": "2026-06-12T15:45:25.768Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a2c299a65826f7b103fa189",
+    "userId": "6a1cf8bf8090df3b3c45adb6",
+    "title": "Ưu đãi từ Forever Shop",
+    "content": "Bạn vừa nhận mã giảm giá dành cho khách VIP: FOREVER (giảm 10000%). Áp dụng khi thanh toán trên website.",
+    "type": "voucher",
+    "referenceId": "6a2c299165826f7b103fa182",
+    "meta": {
+      "couponCode": "FOREVER",
+      "discountLabel": "10000%",
+      "orderId": "",
+      "productId": "",
+      "productName": "",
+      "adminRepliedAt": null,
+      "rewardPoints": null
+    },
+    "isRead": true,
+    "createdAt": "2026-06-12T15:45:30.762Z",
+    "updatedAt": "2026-06-12T15:45:44.599Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "_id": "6a29a4650b6856dfd0c8fe84",
+    "productId": "6a29a4640b6856dfd0c8fe78",
+    "oldPrice": 0,
+    "newPrice": 500000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1781113957263,
+    "__v": 0
+  },
+  {
+    "_id": "6a29a4b40b6856dfd0c8feaa",
+    "productId": "6a29a4640b6856dfd0c8fe78",
+    "oldPrice": 500000,
+    "newPrice": 299000,
+    "reason": "Cập nhật giá",
+    "performedBy": "Admin",
+    "createdAt": 1781114036550,
+    "__v": 0
+  },
+  {
+    "_id": "6a29a5150b6856dfd0c8fed5",
+    "productId": "6a29a4640b6856dfd0c8fe78",
+    "oldPrice": 299000,
+    "newPrice": 349998,
+    "reason": "Cập nhật giá",
+    "performedBy": "Admin",
+    "createdAt": 1781114133136,
+    "__v": 0
+  },
+  {
+    "_id": "6a29b06a2bd710968b95523a",
+    "productId": "6a29723fa4184d389d12a976",
+    "oldPrice": 299,
+    "newPrice": 298998,
+    "reason": "Cập nhật giá",
+    "performedBy": "Admin",
+    "createdAt": 1781117034910,
+    "__v": 0
+  },
+  {
+    "_id": "6a29b0842bd710968b955253",
+    "productId": "6a29723fa4184d389d12a976",
+    "oldPrice": 298998,
+    "newPrice": 298999,
+    "reason": "Cập nhật giá",
+    "performedBy": "Admin",
+    "createdAt": 1781117060811,
+    "__v": 0
+  },
+  {
+    "_id": "6a29b0ea2bd710968b95528f",
+    "productId": "6a29a4640b6856dfd0c8fe78",
+    "oldPrice": 349998,
+    "newPrice": 500000,
+    "reason": "Cập nhật giá",
+    "performedBy": "Admin",
+    "createdAt": 1781117162427,
+    "__v": 0
+  },
+  {
+    "_id": "6a29b1222bd710968b9552bf",
+    "productId": "6a29723fa4184d389d12a976",
+    "oldPrice": 298999,
+    "newPrice": 199000,
+    "reason": "Cập nhật giá",
+    "performedBy": "Admin",
+    "createdAt": 1781117218519,
+    "__v": 0
+  },
+  {
+    "_id": "6a38d956453f89b40fef8749",
+    "productId": "6a38d955453f89b40fef8733",
+    "oldPrice": 0,
+    "newPrice": 290000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782110550607,
+    "__v": 0
+  },
+  {
+    "_id": "6a38db66453f89b40fef879e",
+    "productId": "6a38db65453f89b40fef878e",
+    "oldPrice": 0,
+    "newPrice": 299000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782111078314,
+    "__v": 0
+  },
+  {
+    "_id": "6a38dc78453f89b40fef87fc",
+    "productId": "6a38dc78453f89b40fef87ec",
+    "oldPrice": 0,
+    "newPrice": 150000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782111352908,
+    "__v": 0
+  },
+  {
+    "_id": "6a38df70453f89b40fef88b5",
+    "productId": "6a38df70453f89b40fef88a9",
+    "oldPrice": 0,
+    "newPrice": 399000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782112112411,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e06c453f89b40fef8902",
+    "productId": "6a38e06b453f89b40fef88f6",
+    "oldPrice": 0,
+    "newPrice": 399000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782112364363,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e127453f89b40fef8938",
+    "productId": "6a38e126453f89b40fef892c",
+    "oldPrice": 0,
+    "newPrice": 500000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782112551137,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e375453f89b40fef89e4",
+    "productId": "6a38e375453f89b40fef89d8",
+    "oldPrice": 0,
+    "newPrice": 300000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782113141682,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e4bc453f89b40fef8a48",
+    "productId": "6a38e4bb453f89b40fef8a32",
+    "oldPrice": 0,
+    "newPrice": 200000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782113468063,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e572453f89b40fef8a7c",
+    "productId": "6a38e572453f89b40fef8a70",
+    "oldPrice": 0,
+    "newPrice": 250000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782113650863,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e623453f89b40fef8ab0",
+    "productId": "6a38e622453f89b40fef8aa4",
+    "oldPrice": 0,
+    "newPrice": 450000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782113827333,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e737453f89b40fef8af4",
+    "productId": "6a38e737453f89b40fef8ae8",
+    "oldPrice": 0,
+    "newPrice": 299000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782114103757,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e7ba453f89b40fef8b1e",
+    "productId": "6a38e7ba453f89b40fef8b12",
+    "oldPrice": 0,
+    "newPrice": 299000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782114234929,
+    "__v": 0
+  },
+  {
+    "_id": "6a38e96d453f89b40fef8b5c",
+    "productId": "6a38e96d453f89b40fef8b50",
+    "oldPrice": 0,
+    "newPrice": 300000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782114669575,
+    "__v": 0
+  },
+  {
+    "_id": "6a38ea4d453f89b40fef8b98",
+    "productId": "6a38ea4d453f89b40fef8b8c",
+    "oldPrice": 0,
+    "newPrice": 500000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782114893650,
+    "__v": 0
+  },
+  {
+    "_id": "6a38eb42453f89b40fef8bce",
+    "productId": "6a38eb42453f89b40fef8bc2",
+    "oldPrice": 0,
+    "newPrice": 100000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782115138629,
+    "__v": 0
+  },
+  {
+    "_id": "6a38ebf3453f89b40fef8c00",
+    "productId": "6a38ebf3453f89b40fef8bf4",
+    "oldPrice": 0,
+    "newPrice": 200000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782115315903,
+    "__v": 0
+  },
+  {
+    "_id": "6a38edb1453f89b40fef8c6c",
+    "productId": "6a38edb0453f89b40fef8c60",
+    "oldPrice": 0,
+    "newPrice": 70000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782115761143,
+    "__v": 0
+  },
+  {
+    "_id": "6a38ee50453f89b40fef8c9c",
+    "productId": "6a38ee50453f89b40fef8c90",
+    "oldPrice": 0,
+    "newPrice": 300000,
+    "reason": "Giá khởi tạo",
+    "performedBy": "Admin",
+    "createdAt": 1782115920849,
+    "__v": 0
+  }
+]

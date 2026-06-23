@@ -1,0 +1,123 @@
+[
+  {
+    "_id": "6a034bbc4c816ef1e3ecb52b",
+    "name": "Đen",
+    "hex": "#000000",
+    "skuCode": "D",
+    "sortOrder": 0,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-05-12T15:48:12.804Z",
+    "updatedAt": "2026-05-12T15:48:12.804Z"
+  },
+  {
+    "_id": "6a034bbc4c816ef1e3ecb52c",
+    "name": "Xanh Navy (Than)",
+    "hex": "#000080",
+    "skuCode": "NV",
+    "sortOrder": 10,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-05-12T15:48:12.805Z",
+    "updatedAt": "2026-06-10T16:01:31.066Z"
+  },
+  {
+    "_id": "6a034bbc4c816ef1e3ecb52d",
+    "name": "Xám (Ghi)",
+    "hex": "#9E9E9E",
+    "skuCode": "GY",
+    "sortOrder": 20,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-05-12T15:48:12.805Z",
+    "updatedAt": "2026-05-12T15:48:12.805Z"
+  },
+  {
+    "_id": "6a034bbc4c816ef1e3ecb52e",
+    "name": "Đỏ đô",
+    "hex": "#880E4F",
+    "skuCode": "RE",
+    "sortOrder": 30,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-05-12T15:48:12.806Z",
+    "updatedAt": "2026-05-12T15:48:12.806Z"
+  },
+  {
+    "_id": "6a034bbc4c816ef1e3ecb52f",
+    "name": "Vàng",
+    "hex": "#FFEB3B",
+    "skuCode": "YE",
+    "sortOrder": 40,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-05-12T15:48:12.806Z",
+    "updatedAt": "2026-05-12T15:48:12.806Z"
+  },
+  {
+    "_id": "6a034bbc4c816ef1e3ecb531",
+    "name": "Kem/Be",
+    "hex": "#F5F5DC",
+    "skuCode": "BE",
+    "sortOrder": 60,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-05-12T15:48:12.806Z",
+    "updatedAt": "2026-05-12T15:48:12.806Z"
+  },
+  {
+    "_id": "6a034bbc4c816ef1e3ecb532",
+    "name": "Nâu",
+    "hex": "#5D4037",
+    "skuCode": "BR",
+    "sortOrder": 70,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-05-12T15:48:12.806Z",
+    "updatedAt": "2026-05-12T15:48:12.806Z"
+  },
+  {
+    "_id": "6a1530566e5fb50b473bd933",
+    "name": "Hồng",
+    "hex": "#FFC0CB",
+    "skuCode": "PI",
+    "sortOrder": 80,
+    "isActive": true,
+    "createdAt": "2026-05-26T05:32:06.646Z",
+    "updatedAt": "2026-05-26T05:32:06.646Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a1536fe6e5fb50b473bda37",
+    "name": "Trắng",
+    "hex": "#FFFFFF",
+    "skuCode": "WH",
+    "sortOrder": 90,
+    "isActive": true,
+    "createdAt": "2026-05-26T06:00:30.062Z",
+    "updatedAt": "2026-05-26T06:00:30.062Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a29857da4184d389d12abf3",
+    "name": "xanh dương",
+    "hex": "#0000FF",
+    "skuCode": "XD",
+    "sortOrder": 1,
+    "isActive": true,
+    "createdAt": "2026-06-10T15:40:45.656Z",
+    "updatedAt": "2026-06-10T15:40:45.656Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a38dd7e453f89b40fef8835",
+    "name": "màu tím nhạt",
+    "hex": "#D7C5E0",
+    "skuCode": "LV",
+    "sortOrder": 2,
+    "isActive": true,
+    "createdAt": "2026-06-22T07:00:14.185Z",
+    "updatedAt": "2026-06-22T07:00:14.185Z",
+    "__v": 0
+  }
+]

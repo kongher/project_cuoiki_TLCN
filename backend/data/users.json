@@ -1,0 +1,108 @@
+[
+  {
+    "_id": "69f82f5d2061de25bc2b8276",
+    "name": "Kong Her",
+    "email": "kong12@example.com",
+    "password": "$2b$10$BPwSd7ncZLYXV3Ign3vhXOUKSdSdiJx1FD717dO2dWPB95rp1ECUS",
+    "cartData": {
+      "6a04963cce5989dad62f71f0": {
+        "Đen": {
+          "XXL": 0,
+          "M": 0
+        },
+        "Xanh Navy (Than)": {
+          "S": 0,
+          "M": 0,
+          "XL": 0,
+          "L": 1
+        }
+      },
+      "6a04a3bb22f6353b8ee9f14b": {
+        "Xanh nước biển": {
+          "S": 0,
+          "M": 1,
+          "L": 0
+        },
+        "Nâu": {
+          "M": 1,
+          "L": 1
+        }
+      },
+      "6a0341a09fa05b9cf443209d": {
+        "đen": {
+          "28": 1
+        }
+      }
+    },
+    "__v": 0,
+    "avatar": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1778489782/mxbmo4rn2z7xzpnqgojo.webp",
+    "defaultAddress": {
+      "fullName": "",
+      "phone": "",
+      "address": "",
+      "province": "",
+      "district": "",
+      "ward": ""
+    },
+    "dob": "2016-02-09",
+    "gender": "male",
+    "phone": "0862390554",
+    "isBlocked": false,
+    "membershipTier": "standard",
+    "rewardPoints": 0,
+    "role": "customer",
+    "updatedAt": "2026-06-03T10:23:56.691Z"
+  },
+  {
+    "_id": "6a08627744785df17a7eb1d6",
+    "name": "kong her",
+    "email": "herkong633@gmail.com",
+    "phone": "0862390553",
+    "password": "$2b$10$S596RfYxAg.Ue6TuPBS.SOwQWwSd0z6u/UN/y6dUODDeqV42W0GvS",
+    "gender": "male",
+    "dob": "2002-12-02",
+    "role": "customer",
+    "avatar": "https://res.cloudinary.com/db1nzqj2r/image/upload/v1780908248/rbqtixlphnsshwkywaec.png",
+    "defaultAddress": {
+      "fullName": "kong her",
+      "phone": "0862390554",
+      "address": "abc 123",
+      "province": "Thành phố Hồ Chí Minh",
+      "district": "Thành phố Thủ Đức",
+      "ward": "Phường Linh Xuân"
+    },
+    "cartData": {},
+    "createdAt": "2026-05-16T12:26:31.393Z",
+    "updatedAt": "2026-06-08T08:44:09.474Z",
+    "__v": 0,
+    "isBlocked": false,
+    "membershipTier": "vip",
+    "rewardPoints": 100
+  },
+  {
+    "_id": "6a1cf8bf8090df3b3c45adb6",
+    "name": "Nguyễn Văn b",
+    "email": "herkong633+test@gmail.com",
+    "phone": "0862390555",
+    "password": "$2b$10$PSCmCV4yUpP18qhG6EPZSutF0EVsmEcLJ5xLX1mAOxES2nmf/l42.",
+    "gender": "male",
+    "dob": "2005-01-05",
+    "role": "customer",
+    "isBlocked": false,
+    "membershipTier": "vip",
+    "rewardPoints": 100,
+    "avatar": "",
+    "defaultAddress": {
+      "fullName": "Nguyễn Văn A",
+      "phone": "0862390555",
+      "address": "49 ABC",
+      "province": "Tỉnh Lai Châu",
+      "district": "",
+      "ward": ""
+    },
+    "cartData": {},
+    "createdAt": "2026-06-01T03:13:03.049Z",
+    "updatedAt": "2026-06-23T08:53:41.956Z",
+    "__v": 0
+  }
+]
