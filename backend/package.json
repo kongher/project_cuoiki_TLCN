@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "export-data": "node scripts/exportData.js",
+    "import-data": "node scripts/importData.js"
   },
   "author": "",
   "license": "ISC",
