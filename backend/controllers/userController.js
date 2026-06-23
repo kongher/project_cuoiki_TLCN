@@ -90,13 +90,21 @@ const sendRegisterOtp = async (req, res) => {
         const { code, expiresInSec } = createRegisterOtp(email)
         try {
             await sendRegisterOtpEmail({ to: email, otp: code, expiresInSec })
-        } catch (mailErr) {
+        } /*catch (mailErr) {
             console.error('[Gửi email OTP đăng ký thất bại]', mailErr.message)
             return res.json({
                 success: false,
                 message: 'Không gửi được email OTP. Kiểm tra cấu hình EMAIL_USER / EMAIL_PASS trong .env',
             })
-        }
+        }*/
+        catch (mailErr) {
+    // Sửa thành mailErr thay vì mailErr.message để thấy toàn bộ object lỗi
+    console.error('[Gửi email OTP đăng ký thất bại CHI TIẾT]:', mailErr) 
+    return res.json({
+        success: false,
+        message: 'Lỗi gửi mail: ' + mailErr.message, // Hiển thị lỗi thật ra web để dễ debug
+    })
+}
 
         res.json({
             success: true,

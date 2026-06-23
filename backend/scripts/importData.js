@@ -4,7 +4,7 @@ import path from 'path';
 import 'dotenv/config';
 import { fileURLToPath } from 'url';
 
-// Get current directory
+// Lấy thư mục hiện tại
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dataPath = path.join(__dirname, '../data');
@@ -22,7 +22,7 @@ import PriceHistory from '../models/priceHistoryModel.js';
 import MenuAnnouncement from '../models/menuAnnouncementModel.js';
 import ShopSettings from '../models/shopSettingsModel.js';
 
-// Define collections to import
+// các  collections  import
 const collections = [
   { name: 'users', model: User, file: 'users.json' },
   { name: 'products', model: Product, file: 'products.json' },
@@ -39,30 +39,30 @@ const collections = [
 
 async function importData() {
   try {
-    console.log('🔗 Connecting to MongoDB...');
+    console.log(' Connecting to MongoDB...');
     await mongoose.connect(process.env.MONGODB_URI);
-    console.log('✅ Connected to MongoDB successfully\n');
+    console.log(' Connected to MongoDB successfully\n');
 
     // Ask user if they want to clear existing data
     const shouldClear = process.argv.includes('--clear');
     
     if (shouldClear) {
-      console.log('🗑️  Clearing existing data...');
+      console.log('  Clearing existing data...');
       for (const collection of collections) {
         try {
           const result = await collection.model.deleteMany({});
           if (result.deletedCount > 0) {
-            console.log(`   ✅ Cleared ${collection.name} (${result.deletedCount} documents removed)`);
+            console.log(`    Cleared ${collection.name} (${result.deletedCount} documents removed)`);
           }
         } catch (err) {
-          console.log(`   ⚠️  Could not clear ${collection.name}`);
+          console.log(`     Could not clear ${collection.name}`);
         }
       }
       console.log('');
     }
 
-    // Import data from JSON files
-    console.log('📥 Importing data from JSON files...');
+    // Nhập dữ liệu từ các tệp JSON
+    console.log(' Importing data from JSON files...');
     let totalImported = 0;
     let successCount = 0;
     let skipCount = 0;
@@ -75,7 +75,7 @@ async function importData() {
           const fileContent = fs.readFileSync(filePath, 'utf-8');
           const data = JSON.parse(fileContent);
           
-          // Handle both single object and array
+          // Xử lý cả đối tượng đơn lẻ và mảng.
           const dataArray = Array.isArray(data) ? data : [data];
           
           if (dataArray.length > 0) {
@@ -86,56 +86,54 @@ async function importData() {
               successCount++;
             } catch (err) {
               if (err.code === 11000) {
-                // Duplicate key error - try to insert without duplicates
+                // Lỗi khóa trùng lặp - hãy thử chèn mà không có khóa trùng lặp.
                 let inserted = 0;
                 for (const doc of dataArray) {
                   try {
                     await collection.model.create(doc);
                     inserted++;
                   } catch (e) {
-                    // Skip duplicate
+                    
                   }
                 }
                 if (inserted > 0) {
-                  console.log(`   ✅ Imported ${inserted} ${collection.name} documents (some duplicates skipped)`);
+                  console.log(`    Imported ${inserted} ${collection.name} documents (some duplicates skipped)`);
                   totalImported += inserted;
                   successCount++;
                 } else {
-                  console.log(`   ⚠️  ${collection.name} - All documents already exist (skipped)`);
+                  console.log(`     ${collection.name} - All documents already exist (skipped)`);
                   skipCount++;
                 }
               } else {
-                console.log(`   ❌ Error importing ${collection.name}: ${err.message}`);
+                console.log(`    Error importing ${collection.name}: ${err.message}`);
               }
             }
           } else {
-            console.log(`   ⏭️  ${collection.file} is empty`);
+            console.log(`     ${collection.file} is empty`);
             skipCount++;
           }
         } catch (err) {
-          console.log(`   ❌ Error reading ${collection.file}: ${err.message}`);
+          console.log(`    Error reading ${collection.file}: ${err.message}`);
         }
       } else {
-        console.log(`   ⏭️  ${collection.file} not found - skipping`);
+        console.log(`     ${collection.file} not found - skipping`);
         skipCount++;
       }
     }
 
-    console.log(`\n✨ Import Summary:`);
-    console.log(`   📊 Total documents imported: ${totalImported}`);
-    console.log(`   ✅ Collections successfully imported: ${successCount}`);
-    console.log(`   ⏭️  Collections skipped: ${skipCount}`);
-    console.log(`\n💡 Tips:`);
+    console.log(`\n Import Summary:`);
+    console.log(`    Total documents imported: ${totalImported}`);
+    console.log(`   Collections successfully imported: ${successCount}`);
+    console.log(`     Collections skipped: ${skipCount}`);
+    console.log(`\n Tips:`);
     console.log(`   - Use --clear flag to clear existing data: npm run import-data -- --clear`);
     console.log(`   - Check MongoDB Atlas for imported collections`);
     console.log(`   - If you have duplicates, use --clear to start fresh`);
     
     process.exit(0);
   } catch (error) {
-    console.error('❌ Error importing data:', error.message);
+    console.error(' Error importing data:', error.message);
     process.exit(1);
   }
 }
-
-// Start import
 importData();

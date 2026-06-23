@@ -4,12 +4,12 @@ import path from 'path';
 import 'dotenv/config';
 import { fileURLToPath } from 'url';
 
-// Get current directory
+// Lấy thư mục hiện tại
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const dataPath = path.join(__dirname, '../data');
 
-// Create data directory if it doesn't exist
+// Tạo thư mục dữ liệu nếu nó chưa tồn tại.
 if (!fs.existsSync(dataPath)) {
   fs.mkdirSync(dataPath, { recursive: true });
 }
@@ -27,7 +27,7 @@ import PriceHistory from '../models/priceHistoryModel.js';
 import MenuAnnouncement from '../models/menuAnnouncementModel.js';
 import ShopSettings from '../models/shopSettingsModel.js';
 
-// Define collections to export
+// Xác định các bộ sưu tập cần xuất
 const collections = [
   { name: 'users', model: User, file: 'users.json' },
   { name: 'products', model: Product, file: 'products.json' },
@@ -42,15 +42,16 @@ const collections = [
   { name: 'shopSettings', model: ShopSettings, file: 'shopSettings.json' },
 ];
 
+// Hàm xuất dữ liệu từ MongoDB sang các tệp JSON
 async function exportData() {
   try {
-    console.log('🔗 Connecting to MongoDB...');
+    console.log(' Connecting to MongoDB...');
     await mongoose.connect(process.env.MONGODB_URI);
-    console.log('✅ Connected to MongoDB successfully');
+    console.log(' Connected to MongoDB successfully');
 
-    // Export data to JSON files
-    console.log('\n📤 Exporting data to JSON files...');
-    console.log(`📁 Export location: ${dataPath}\n`);
+    // Xuất dữ liệu sang tệp JSON
+    console.log('\n Exporting data to JSON files...');
+    console.log(`Export location: ${dataPath}\n`);
     
     let totalExported = 0;
 
@@ -61,26 +62,24 @@ async function exportData() {
         if (documents.length > 0) {
           const filePath = path.join(dataPath, collection.file);
           fs.writeFileSync(filePath, JSON.stringify(documents, null, 2), 'utf-8');
-          console.log(`   ✅ Exported ${documents.length} ${collection.name} documents`);
+          console.log(`    Exported ${documents.length} ${collection.name} documents`);
           totalExported += documents.length;
         } else {
-          console.log(`   ℹ️  ${collection.name} collection is empty`);
+          console.log(`    ${collection.name} collection is empty`);
         }
       } catch (err) {
-        console.log(`   ⚠️  ${collection.name} - ${err.message}`);
+        console.log(`     ${collection.name} - ${err.message}`);
       }
     }
 
-    console.log(`\n✨ Export completed! Total documents exported: ${totalExported}`);
-    console.log(`\n📦 Files saved to: backend/data/`);
+    console.log(`\n Export completed! Total documents exported: ${totalExported}`);
+    console.log(`\n Files saved to: backend/data/`);
     console.log('   You can now share these JSON files with others');
     
     process.exit(0);
   } catch (error) {
-    console.error('❌ Error exporting data:', error.message);
+    console.error(' Error exporting data:', error.message);
     process.exit(1);
   }
 }
-
-// Start export
 exportData();
