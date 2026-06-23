@@ -90,7 +90,7 @@ const Register = () => {
       setLoading(false)
     }
   }
-
+  // nhân OTP và xác thực OTP
   const verifyOtp = async (code) => {
     if (verifyingRef.current) return
     verifyingRef.current = true
@@ -122,7 +122,8 @@ const Register = () => {
       verifyingRef.current = false
     }
   }
-
+  
+  // xác thực OTP khi người dùng nhấn nút xác thực
   const handleVerifyOtp = async (e) => {
     e.preventDefault()
     if (!otp.trim()) {
@@ -131,13 +132,12 @@ const Register = () => {
     }
     await verifyOtp(otp)
   }
-
+// xác thực OTP khi người dùng nhập đủ 6 ký tự
   useEffect(() => {
     if (step !== 'otp' || otp.length !== 6 || loading) return
     verifyOtp(otp)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [otp, step])
-
+  // gửi lại OTP
   const handleResendOtp = async () => {
     clearRegisterToken()
     setLoading(true)
@@ -158,6 +158,8 @@ const Register = () => {
       setLoading(false)
     }
   }
+
+  // xử lý đăng ký tài khoản
 
   const handleRegister = async (e) => {
     e.preventDefault()
@@ -216,6 +218,7 @@ const Register = () => {
     }
   }
 
+  // các thành nhập thông tin trên phần giao diện
   const fieldClass =
     'w-full bg-gray-100 border-0 rounded-sm px-4 py-3 text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300'
 

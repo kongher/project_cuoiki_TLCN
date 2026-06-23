@@ -16,8 +16,6 @@
 .Toastify__toast-body {
   font-family: 'Montserrat', system-ui, sans-serif !important;
 }
-
-/** Tiêu đề hero / đăng nhập — Montserrat, độ đậm vừa */
 .prata-regular {
   font-weight: 500;
   font-style: normal;
@@ -27,7 +25,6 @@ a.active hr{
     display: block;
 }
 
-/* Thanh cuộn tùy chỉnh — nền tối, thumb xám mỏng bo tròn (Firefox + WebKit) */
 html,
 body {
   scrollbar-width: thin;

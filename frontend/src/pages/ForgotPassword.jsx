@@ -22,6 +22,7 @@ const ForgotPassword = () => {
     if (token) navigate('/')
   }, [token, navigate])
 
+  // Giảm thời gian còn lại của OTP mỗi giây
   useEffect(() => {
     if (otpSeconds <= 0) return undefined
     const t = window.setInterval(() => setOtpSeconds((s) => Math.max(0, s - 1)), 1000)
@@ -42,7 +43,7 @@ const ForgotPassword = () => {
       // ignore
     }
   }
-
+  // Khi component được mount, kiểm tra xem có reset token trong sessionStorage không
   useEffect(() => {
     const em = normalizedEmail()
     if (!em) return
@@ -52,7 +53,7 @@ const ForgotPassword = () => {
     } catch (err) {
       // ignore
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Khi email thay đổi, xóa reset token trong sessionStorage để tránh nhầm lẫn
   }, [email])
 
   const handleSendOtp = async (e) => {
@@ -84,6 +85,7 @@ const ForgotPassword = () => {
     }
   }
 
+  // Xử lý xác thực OTP
   const handleVerifyOtp = async (e) => {
     e.preventDefault()
     if (!otp.trim()) {
@@ -118,6 +120,7 @@ const ForgotPassword = () => {
     }
   }
 
+  // Xử lý gửi lại OTP
   const handleResendOtp = async () => {
     clearResetToken()
     setLoading(true)
@@ -138,6 +141,7 @@ const ForgotPassword = () => {
     }
   }
 
+  // Xử lý đặt lại mật khẩu
   const handleResetPassword = async (e) => {
     e.preventDefault()
     const rt =

@@ -45,17 +45,15 @@ const addToCart = async (req,res) => {
         
         const { userId, itemId, size } = req.body
         const color = String(req.body.color || 'DEFAULT')
-
+        //Kiểm tra stock
         const product = await productModel.findById(itemId)
         const maxStock = product ? getStockForLine(product, color, size) : null
-
+        //Lấy giỏ hiện tại
         const userData = await userModel.findById(userId)
         let cartData = await userData.cartData;
-        // Backward compatible:
-        // Old format: cartData[itemId][size] = qty
-        // New format: cartData[itemId][color][size] = qty
+        
         if (!cartData[itemId]) cartData[itemId] = {}
-
+        //Kiểm tra xem sản phẩm này có đang được lưu theo kiểu cũ không (chỉ có size mà không có color), nếu có thì chuyển nó về format mới (có color)
         if (typeof cartData[itemId][size] === 'number') {
             const oldQty = cartData[itemId][size]
             cartData[itemId] = { DEFAULT: { [size]: oldQty } }
@@ -71,9 +69,9 @@ const addToCart = async (req,res) => {
         if (typeof maxStock === 'number' && maxStock < 1) {
             return res.json({ success: false, message: 'sản phẩm không đủ' })
         }
-
+        //Thêm vào giỏ hàng với số lượng mặc định là 1
         cartData[itemId][color][size] = 1
-
+        //Lưu vào database
         await userModel.findByIdAndUpdate(userId, {cartData})
 
         res.json({ success: true, message: "Added To Cart" })
@@ -98,9 +96,9 @@ const updateCart = async (req,res) => {
 
         const product = await productModel.findById(itemId)
         const maxStock = product ? getStockForLine(product, color, size) : null
-
+        //Kiểm tra số lượng có vượt quá stock không
         const stockMsg = getStockLimitMessage(qty, maxStock)
-        if (qty > 0 && stockMsg) {
+        if (qty > 0 && stockMsg) { 
             return res.json({ success: false, message: stockMsg })
         }
 

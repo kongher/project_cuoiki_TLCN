@@ -12,7 +12,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
 
     const currency = 'đ';
-    /** Phí ship mặc định toàn quốc; freeship khi tạm tính đạt ngưỡng */
+    /** Phí ship mặc định  */
     const SHIPPING_FEE_DEFAULT = 30000
     const FREE_SHIP_THRESHOLD = 300000
 
@@ -35,22 +35,22 @@ const ShopContextProvider = (props) => {
     const navigate = useNavigate();
 
     const closeCartSuccessModal = () => setCartSuccessModal({ open: false, productName: '' })
-
+        //thêm vào giỏ hàng 
     const addToCart = async (itemId, size, color = 'DEFAULT', maxStock = null, productName = null) => {
 
-        if (!size) {
+        if (!size) { //Kiểm tra size đã được chọn hay chưa
             toast.error('Select Product Size');
             return;
         }
 
         let cartData = structuredClone(cartItems);
 
-        if (!cartData[itemId]) cartData[itemId] = {}
+        if (!cartData[itemId]) cartData[itemId] = {} // Khởi tạo mục nếu nó chưa tồn tại.
 
-        // Backward compatible with old format
+    
         if (typeof cartData[itemId][size] === 'number') {
             const oldQty = cartData[itemId][size]
-            cartData[itemId] = { DEFAULT: { [size]: oldQty } }
+            cartData[itemId] = { DEFAULT: { [size]: oldQty } } 
         }
 
         if (!cartData[itemId][color]) cartData[itemId][color] = {}
@@ -60,17 +60,18 @@ const ShopContextProvider = (props) => {
             toast.info('bạn đã có sản phẩm này trong giỏ hàng')
             return
         }
-
+        //Kiểm tra stock
         let stockLimit = maxStock
         if (stockLimit === null) {
             const product = products.find((p) => p._id === itemId)
             stockLimit = getProductSizeStock(product, color, size)
+            //Lấy tồn kho từ variant
         }
         if (typeof stockLimit === 'number' && stockLimit < 1) {
             toast.error('sản phẩm không đủ')
             return
         }
-
+            //Cập nhật giỏ hàng
         cartData[itemId][color][size] = 1
         setCartItems(cartData);
 
@@ -80,7 +81,7 @@ const ShopContextProvider = (props) => {
             'sản phẩm'
         setCartSuccessModal({ open: true, productName: resolvedName })
 
-        if (token) {
+        if (token) { // Nếu người dùng đã đăng nhập, gửi yêu cầu cập nhật giỏ hàng đến backend
             try {
                 const response = await axios.post(backendUrl + '/api/cart/add', { itemId, size, color }, { headers: { token } })
                 if (!response.data?.success) {
@@ -121,7 +122,7 @@ const ShopContextProvider = (props) => {
         }
         return totalCount;
     }
-
+    // cập nhập giỏ hàng khi thay đổi số lượng
     const updateQuantity = async (itemId, size, quantity, color = 'DEFAULT', maxStock = null) => {
 
         let cartData = structuredClone(cartItems);
@@ -269,9 +270,10 @@ const ShopContextProvider = (props) => {
         } catch (e) {}
     }
 
+    // Lấy dữ liệu sản phẩm từ backend
+
     const getProductsData = async () => {
         try {
-
             const response = await axios.get(backendUrl + '/api/product/list')
             if (response.data.success) {
                 setProducts(response.data.products.reverse())
@@ -285,6 +287,7 @@ const ShopContextProvider = (props) => {
         }
     }
 
+    // Lấy dữ liệu giỏ hàng của người dùng từ backend sau khi đăng nhập thành công 
     const getUserCart = async ( token ) => {
         try {
             
@@ -298,6 +301,7 @@ const ShopContextProvider = (props) => {
         }
     }
 
+    // Lấy số lượng phản hồi chưa đọc của người dùng từ backend
     const getUserReplies = async (token) => {
         try {
             const response = await axios.post(backendUrl + '/api/order/user-replies', {}, { headers: { token } })
@@ -312,7 +316,7 @@ const ShopContextProvider = (props) => {
     useEffect(() => {
         getProductsData()
     }, [])
-
+    // tải dữ liệu giỏ hàng khi token thay đổi
     useEffect(() => {
         if (!token && localStorage.getItem('token')) {
             setToken(localStorage.getItem('token'))
@@ -334,7 +338,6 @@ const ShopContextProvider = (props) => {
         const interval = setInterval(fetchReplies, 30000) // Check every 30 seconds
         return () => clearInterval(interval)
     }, [token])
-
     const value = {
         products, currency,
         SHIPPING_FEE_DEFAULT, FREE_SHIP_THRESHOLD, getShippingFee,

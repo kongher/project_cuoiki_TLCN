@@ -63,7 +63,6 @@ const Cart = () => {
 
   useEffect(() => {
     refreshProducts?.()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const trySetQuantity = (item, qty, maxStock) => {
@@ -105,11 +104,11 @@ const Cart = () => {
   }
 
   useEffect(() => {
-    const tempData = [];
+    const tempData = []; // Biến tạm để lưu trữ dữ liệu giỏ hàng đã được chuẩn hóa về format mới { _id, color, size, quantity }
     for (const items in cartItems) {
       for (const key in cartItems[items]) {
         const maybeQty = cartItems[items][key]
-        // legacy format: cartItems[productId][size] = qty
+        // Định dạng cũ: cartItems[productId][size] = qty
         if (typeof maybeQty === 'number') {
           if (maybeQty > 0) {
             tempData.push({
@@ -122,7 +121,7 @@ const Cart = () => {
           continue
         }
 
-        // new format: cartItems[productId][color][size] = qty
+        // Định dạng mới cartItems[productId][color][size] = qty
         const color = key
         for (const size in cartItems[items][color]) {
           const qty = cartItems[items][color][size]

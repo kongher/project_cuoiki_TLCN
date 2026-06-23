@@ -61,7 +61,7 @@ const loginUser = async (req, res) => {
 
         }
         else {
-            res.json({ success: false, message: 'Invalid credentials' })
+            res.json({ success: false, message: 'Thông tin đăng nhập không hợp lệ' })
         }
 
     } catch (error) {
@@ -72,6 +72,7 @@ const loginUser = async (req, res) => {
 
 const normalizeEmailInput = (raw) => String(raw || '').trim().toLowerCase()
 
+// Đăng ký tài khoản mới
 const sendRegisterOtp = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email)
@@ -107,7 +108,7 @@ const sendRegisterOtp = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Xác thực mã OTP đăng ký
 const verifyRegisterOtpHandler = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email)
@@ -133,7 +134,7 @@ const verifyRegisterOtpHandler = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Gửi lại mã OTP đăng ký
 const resendRegisterOtp = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email)
@@ -161,7 +162,7 @@ const resendRegisterOtp = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Đăng ký tài khoản mới
 const registerUser = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email)
@@ -173,6 +174,7 @@ const registerUser = async (req, res) => {
         const confirmPassword = String(req.body.confirmPassword || '')
         const registerToken = String(req.body.register_token || req.body.registerToken || '').trim()
 
+        // Kiểm tra các trường bắt buộc và hợp lệ
         if (!email || !validator.isEmail(email)) {
             return res.json({ success: false, message: 'Email không hợp lệ' })
         }
@@ -201,10 +203,11 @@ const registerUser = async (req, res) => {
         if (phoneExists) {
             return res.json({ success: false, message: 'Số điện thoại này đã được sử dụng' })
         }
-
+        // Mã hóa mật khẩu trước khi lưu vào cơ sở dữ liệu
         const salt = await bcrypt.genSalt(10)
         const hashedPassword = await bcrypt.hash(password.trim(), salt)
 
+        // Tạo tài khoản mới
         const newUser = new userModel({
             name,
             phone,
@@ -214,7 +217,7 @@ const registerUser = async (req, res) => {
             password: hashedPassword,
             role: 'customer',
         })
-
+        // Lưu tài khoản mới vào cơ sở dữ liệu
         await newUser.save()
         clearRegisterOtp(email)
 
@@ -227,7 +230,7 @@ const registerUser = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Lấy trạng thái OTP đăng ký
 const getRegisterOtpStatus = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email)
@@ -240,7 +243,7 @@ const getRegisterOtpStatus = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Danh sách khách hàng (admin only)
 const listCustomers = async (req, res) => {
     try {
         const users = await userModel
@@ -270,7 +273,7 @@ const listCustomers = async (req, res) => {
 }
 
 const resetKeyFromEmail = (email) => `email:${email}`
-
+// Gửi mã OTP đặt lại mật khẩu
 const sendForgotPasswordOtp = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email || req.body.identifier)
@@ -309,7 +312,7 @@ const sendForgotPasswordOtp = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Xác thực mã OTP đặt lại mật khẩu
 const verifyForgotPasswordOtp = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email || req.body.identifier)
@@ -337,7 +340,7 @@ const verifyForgotPasswordOtp = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Đặt lại mật khẩu với mã OTP
 const resetPasswordWithOtp = async (req, res) => {
     try {
         const email = normalizeEmailInput(req.body.email || req.body.identifier)
@@ -405,7 +408,7 @@ const resetPasswordWithOtp = async (req, res) => {
     }
 }
 
-// Route for admin login
+// Admin login
 const adminLogin = async (req, res) => {
     try {
         
@@ -438,8 +441,7 @@ export {
     verifyForgotPasswordOtp,
     resetPasswordWithOtp,
 }
-
-// --- Profile APIs (auth required) ---
+// hàm sanitizeUser để loại bỏ các thông tin nhạy cảm trước khi trả về cho client
 const sanitizeUser = (user) => {
     if (!user) return null
     return {
@@ -453,7 +455,7 @@ const sanitizeUser = (user) => {
         defaultAddress: user.defaultAddress || {}
     }
 }
-
+// Lấy thông tin hồ sơ người dùng
 const getProfile = async (req, res) => {
     try {
         const userId = req.userId || req.body.userId
@@ -464,7 +466,7 @@ const getProfile = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Cập nhật thông tin hồ sơ người dùng
 const updateProfile = async (req, res) => {
     try {
         const userId = req.userId || req.body.userId
@@ -502,7 +504,7 @@ const updateProfile = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Tải lên ảnh đại diện người dùng
 const uploadAvatar = async (req, res) => {
     try {
         const userId = req.userId || req.body.userId
@@ -519,7 +521,7 @@ const uploadAvatar = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-
+// Đổi mật khẩu người dùng
 const changePassword = async (req, res) => {
     try {
         const userId = req.userId || req.body.userId

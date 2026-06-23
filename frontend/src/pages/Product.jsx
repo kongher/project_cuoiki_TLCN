@@ -56,6 +56,8 @@ const Product = () => {
     const y = ((event.clientY - rect.top) / rect.height) * 100;
     setZoomOrigin({ x: `${x}%`, y: `${y}%` });
   }
+// Lấy thông tin sản phẩm từ API, ưu tiên cache nếu có
+// sau đó cập nhật lại từ API để đảm bảo dữ liệu mới nhất
 
   const fetchProductData = async () => {
     if (!backendUrl || !productId) return
@@ -66,12 +68,12 @@ const Product = () => {
         setImage((prev) => prev || response.data.product.image?.[0] || '')
       }
     } catch (e) {
-      // fallback: keep existing cached productData
+      // Không cần hiển thị lỗi nếu fetch thất bại, giữ nguyên dữ liệu cũ nếu có
     }
   }
 
   useEffect(() => {
-    // fast initial render from cache, then refresh from API
+    // Nếu đã có sản phẩm trong cache, hiển thị ngay để không phải chờ, sau đó vẫn fetch lại để cập nhật dữ liệu mới nhất
     if (products.length > 0) {
       const found = products.find((item) => item._id === productId)
       if (found) {
@@ -81,7 +83,7 @@ const Product = () => {
       }
     }
     fetchProductData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [productId])
 
   const variants = useMemo(() => {
@@ -174,23 +176,24 @@ const Product = () => {
   useEffect(() => {
     if (!productData) return
 
-    // Auto select if only one color OR selectedColorName is empty
+    // Nếu chỉ có 1 biến thể, tự động chọn màu đó; nếu có nhiều biến thể nhưng chưa chọn màu, chọn màu đầu tiên
     if (variants.length === 1) {
       setSelectedColorName(variants[0].colorName)
     } else if (variants.length > 1 && !selectedColorName) {
       setSelectedColorName(variants[0].colorName)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Nếu biến thể hiện tại đã chọn nhưng không còn tồn, tự động chọn biến thể khác còn tồn
   }, [productData, variants.length])
 
   useEffect(() => {
-    // When color or product changes, reset gallery to first image of that group
+    // Khi đổi màu hoặc sản phẩm, reset ảnh chính về ảnh đầu tiên trong gallery của biến thể đó
     if (!galleryImages.length) return
     setActiveImageIndex(0)
     setImage(galleryImages[0] || '')
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Nếu biến thể hiện tại đã chọn nhưng không còn tồn, tự động chọn size khác còn tồn
   }, [selectedColorName, productId, galleryImages.join('|')])
 
+  // Khi đổi màu hoặc sản phẩm, reset size về size đầu tiên còn tồn của biến thể đó
   const setActiveImage = (index) => {
     const next = galleryImages[index]
     if (!next) return
@@ -202,18 +205,20 @@ const Product = () => {
     }, 120)
   }
 
+  // Chuyển sang ảnh trước trong gallery, vòng lặp
   const goPrevImage = () => {
     if (!galleryImages.length) return
     const nextIndex = (activeImageIndex - 1 + galleryImages.length) % galleryImages.length
     setActiveImage(nextIndex)
   }
 
+  // Chuyển sang ảnh tiếp theo trong gallery, vòng lặp
   const goNextImage = () => {
     if (!galleryImages.length) return
     const nextIndex = (activeImageIndex + 1) % galleryImages.length
     setActiveImage(nextIndex)
   }
-
+// Khi nhấn nút "Mua ngay", kiểm tra điều kiện và chuyển sang trang đặt hàng
   const handleBuyNow = () => {
     if (!size) {
       toast.error('Vui lòng chọn kích cỡ')
@@ -242,6 +247,7 @@ const Product = () => {
     navigate('/place-order', { state: { selectedCartItems: payload, buyNow: true } })
   }
 
+  // Kiểm tra xem người dùng có đủ điều kiện để đánh giá sản phẩm hay không
   useEffect(() => {
     const checkPurchase = async () => {
       if (!token || !backendUrl || !productId) {
@@ -256,16 +262,16 @@ const Product = () => {
           {},
           { headers: { token } }
         )
-
+        // Nếu không thành công, coi như không đủ điều kiện đánh giá
         if (!response.data.success) {
           setPurchaseState({ loading: false, eligible: false, inProgress: false })
           return
         }
-
+// Kiểm tra xem người dùng đã mua sản phẩm này chưa, nếu có thì eligible = true, nếu đang trong quá trình giao hàng thì inProgress = true
         const orders = response.data.orders || []
         let eligible = false
         let inProgress = false
-
+        // Duyệt qua các đơn hàng của người dùng để kiểm tra xem có đơn hàng nào chứa sản phẩm này không
         for (const order of orders) {
           const hasProduct = Array.isArray(order.items) && order.items.some((i) => String(i?._id) === String(productId))
           if (!hasProduct) continue
@@ -285,7 +291,7 @@ const Product = () => {
         setPurchaseState({ loading: false, eligible: false, inProgress: false })
       }
     }
-
+    // Gọi hàm kiểm tra điều kiện đánh giá sản phẩm khi component được mount hoặc khi token, backendUrl, productId thay đổi
     checkPurchase()
   }, [backendUrl, productId, token])
 
@@ -299,6 +305,7 @@ const Product = () => {
     ? Number((reviewsSorted.reduce((s, r) => s + (Number(r?.rating) || 0), 0) / reviewsSorted.length).toFixed(1))
     : 0)
 
+    // Render các ngôi sao đánh giá dựa trên giá trị trung bình
   const renderStars = (value) => {
     const v = Number(value) || 0
     const full = Math.floor(v)
@@ -320,7 +327,8 @@ const Product = () => {
       </div>
     )
   }
-
+  
+    // Tính giá bán hiện tại của sản phẩm dựa trên giá gốc, giá sale và phần trăm giảm giá
   const productSalePrice = productData ? (
     productData.discountPercent > 0
       ? (productData.salePrice && productData.salePrice > 0
@@ -328,7 +336,7 @@ const Product = () => {
           : Math.round(productData.price * (100 - productData.discountPercent) / 100))
       : productData.price
   ) : 0;
-
+  // Kiểm tra xem sản phẩm có đang được giảm giá hay không
   const hasSale = productData && Number(productData.discountPercent) > 0
 
   return productData ? (

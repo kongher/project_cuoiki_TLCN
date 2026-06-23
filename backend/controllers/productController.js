@@ -33,7 +33,7 @@ const uploadCloudinary = async (file) => {
     const result = await cloudinary.uploader.upload(file.path, { resource_type: 'image' });
     return result.secure_url
 }
-
+// Chuyển file upload thành map theo fieldname để dễ truy xuất
 const toFileArrayMap = (files) => {
     const list = Array.isArray(files) ? files : []
     const map = {}
@@ -44,7 +44,7 @@ const toFileArrayMap = (files) => {
     })
     return map
 }
-
+// Chuẩn hóa màu sắc: chỉ chấp nhận hex code, tự động thêm # nếu thiếu, và chuyển thành chữ hoa
 const sanitizeColorHex = (raw) => {
     const s = String(raw || '').trim()
     if (!s) return ''
@@ -53,7 +53,7 @@ const sanitizeColorHex = (raw) => {
     if (/^[0-9A-Fa-f]{6}$/.test(noHash)) return `#${noHash.toUpperCase()}`
     return ''
 }
-
+// Chuẩn hóa parentSku: chỉ giữ lại chữ, số, gạch ngang, gạch dưới; xóa khoảng trắng; chuyển thành chữ hoa
 const normalizeParentSku = (raw) =>
     String(raw || '')
         .trim()
@@ -72,7 +72,8 @@ const cleanSkuBySize = (raw, stockBySize) => {
     return out
 }
 
-// function for add product
+    // Admin: add new product
+
 const addProduct = async (req, res) => {
     try {
 
@@ -90,22 +91,22 @@ const addProduct = async (req, res) => {
         if (skuConflict) {
             return res.json({ success: false, message: skuConflict.message })
         }
-
+        // Kiểm tra trùng SKU với các sản phẩm khác 
         const files = Array.isArray(req.files) ? req.files : []
         const filesByField = toFileArrayMap(files)
         const firstFile = (field) => (Array.isArray(filesByField[field]) ? filesByField[field][0] : undefined)
 
-        // New: product gallery images (preferred)
+        //sản phẩm mới có thể có gallery hình ảnh riêng, nếu có thì ưu tiên dùng gallery này
         const galleryFiles = filesByField.images || []
         const galleryUrls = await Promise.all((Array.isArray(galleryFiles) ? galleryFiles : []).map(uploadCloudinary))
 
-        // Legacy images (image1..image4) support
+        //nếu không có gallery riêng thì dùng các file image1-image4 như trước đây
         const legacyImages = ['image1', 'image2', 'image3', 'image4']
             .map((k) => firstFile(k))
             .filter(Boolean)
         const legacyImagesUrl = await Promise.all(legacyImages.map(uploadCloudinary))
 
-        // Variants support
+        // Nếu không có gallery nào thì dùng ảnh thumbnail của variants làm ảnh hiển thị
         const rawVariants = rawVariantsForSku
         const variantsInput = Array.isArray(rawVariants) ? rawVariants : []
 
@@ -122,7 +123,7 @@ const addProduct = async (req, res) => {
                 const mainFile = firstFile(`variantMain${idx}`) || firstFile(`variantImage${idx}`)
                 const hoverFile = firstFile(`variantHover${idx}`)
                 const galleryExtraFiles = filesByField[`variantGallery${idx}`] || []
-
+                
                 const thumbnail = await uploadCloudinary(thumbFile)
                 const uploadedMain = await uploadCloudinary(mainFile)
                 const mainImage = uploadedMain || thumbnail
@@ -133,6 +134,7 @@ const addProduct = async (req, res) => {
                     hoverUrl: hoverImage || v?.hoverUrl || '',
                     thumbnailUrl: thumbnail,
                 })
+            
                 const gallery = galleryUrlsFromItems(imageItems)
 
                 return {
@@ -160,7 +162,7 @@ const addProduct = async (req, res) => {
                 : (legacyImagesUrl.filter(Boolean).length > 0
                     ? legacyImagesUrl.filter(Boolean)
                     : variantDisplayUrls)
-
+        
         const productData = {
             name,
             description,
@@ -182,7 +184,7 @@ const addProduct = async (req, res) => {
         }
 
         console.log(productData);
-
+        // Lưu sản phẩm mới vào database
         const product = new productModel(productData);
         await product.save()
 
@@ -207,15 +209,13 @@ const addProduct = async (req, res) => {
     }
 }
 
-// function for list product
+// Danh sách sản phẩm cho trang chủ và trang bộ sưu tập
 const listProducts = async (req, res) => {
     try {
         
         const specialSaleQuery =
             req.query.isSpecialSale === 'true' || req.query.specialSale === 'true'
 
-        // Backward compatible: old products might not have isActive yet
-        // Treat missing isActive as active (only hide when isActive === false)
         const activeQuery = { isActive: { $ne: false } }
 
         const query = specialSaleQuery
@@ -234,7 +234,7 @@ const listProducts = async (req, res) => {
     }
 }
 
-// Admin: list all products (including inactive)
+// Danh sách sản phẩm cho trang admin bao gòm cả sản phẩm ẩn
 const adminListProducts = async (req, res) => {
     try {
         const products = await productModel.find({})
@@ -245,7 +245,8 @@ const adminListProducts = async (req, res) => {
     }
 }
 
-// Admin: toggle visibility
+// Admin: bật/tắt hiển thị sản phẩm
+
 const toggleProductActive = async (req, res) => {
     try {
         const { id, isActive } = req.body
@@ -260,7 +261,8 @@ const toggleProductActive = async (req, res) => {
     }
 }
 
-// Admin: bulk delete
+// Admin: xóa sản phẩm
+
 const bulkDeleteProducts = async (req, res) => {
     try {
         const ids = Array.isArray(req.body?.ids) ? req.body.ids : []
@@ -273,7 +275,7 @@ const bulkDeleteProducts = async (req, res) => {
     }
 }
 
-// Admin: bulk apply 10% discount + add to "Siêu sale trong tháng"
+// Admin: áp dụng giảm giá 10% và thêm vào "Siêu sale"
 const bulkSpecialSale10 = async (req, res) => {
     try {
         const ids = Array.isArray(req.body?.ids) ? req.body.ids : []
@@ -297,7 +299,7 @@ const bulkSpecialSale10 = async (req, res) => {
     }
 }
 
-// Admin: bulk apply discountPercent + add to "Siêu sale trong tháng"
+// Admin: áp dụng giảm giá tùy chọn và thêm vào "Siêu sale" tùy chọn
 const bulkSpecialSalePercent = async (req, res) => {
     try {
         const ids = Array.isArray(req.body?.ids) ? req.body.ids : []
@@ -339,7 +341,7 @@ const bulkSpecialSalePercent = async (req, res) => {
     }
 }
 
-// Admin: update product
+// Admin: cập nhật thông tin sản phẩm (bao gồm cả hình ảnh và variants)
 const updateProduct = async (req, res) => {
     try {
         const id = req.body?.id
@@ -392,13 +394,13 @@ const updateProduct = async (req, res) => {
                 ? Math.round(nextPrice * (100 - nextDiscountPercent) / 100)
                 : nextPrice
 
-        // New: product gallery images (optional, preferred)
+        // Nếu có gallery mới thì ưu tiên dùng gallery này, không thì giữ nguyên
         const galleryFiles = filesByField.images || []
         const galleryUrls = galleryFiles.length > 0
             ? await Promise.all(galleryFiles.map(uploadCloudinary))
             : []
 
-        // Variants update (optional)
+        // Nếu có gallery mới thì dùng gallery mới, không thì dùng các file image1-image4 nếu có, nếu không có nữa thì giữ nguyên ảnh cũ
         const rawVariants = req.body?.variants !== undefined ? safeJsonParse(req.body.variants, []) : null
         const variantsInput = rawVariants === null ? null : (Array.isArray(rawVariants) ? rawVariants : [])
         const existingVariants = Array.isArray(existing.variants) ? existing.variants : []
@@ -413,6 +415,7 @@ const updateProduct = async (req, res) => {
             }
         }
 
+        // Xử lý variants: nếu có input mới thì cập nhật theo input, nếu không có input mới thì giữ nguyên
         let nextVariants = existingVariants
         if (variantsInput !== null) {
             nextVariants = await Promise.all(
@@ -475,7 +478,7 @@ const updateProduct = async (req, res) => {
             ).then((arr) => (arr || []).filter(Boolean))
         }
 
-        // Legacy images update
+        // Xử lý ảnh hiển thị: ưu tiên gallery mới, nếu không có thì dùng các file image1-image4, nếu không có nữa thì dùng ảnh từ variants, nếu vẫn không có thì giữ nguyên
         const legacyImages = ['image1', 'image2', 'image3', 'image4']
             .map((k) => firstFile(k))
             .filter(Boolean)
@@ -544,7 +547,8 @@ const listProductTags = async (req, res) => {
     }
 }
 
-// function for removing product
+// Admin: xóa sản phẩm
+
 const removeProduct = async (req, res) => {
     try {
         
@@ -557,12 +561,12 @@ const removeProduct = async (req, res) => {
     }
 }
 
-// function for single product info
+// Admin: xem thông tin chi tiết sản phẩm
 const singleProduct = async (req, res) => {
     try {
         
         const { productId } = req.body
-        const product = await productModel.findById(productId)
+        const product = await productModel.findById(productId) //Tìm kiếm sản phẩm theo ID
         if (!product) return res.json({ success: false, message: 'Product not found' })
         res.json({ success: true, product: serializeProductImages(product) })
 
@@ -571,6 +575,8 @@ const singleProduct = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
+
+// Admin: xem tóm tắt đánh giá sản phẩm
 
 const reviewSummary = async (req, res) => {
     try {
@@ -590,7 +596,7 @@ const reviewSummary = async (req, res) => {
                 sum += value
             }
         })
-
+// Tính điểm trung bình, làm tròn 1 chữ số thập phân
         const average = total > 0 ? Number((sum / total).toFixed(1)) : 0
         res.json({ success: true, summary: { average, total, counts } })
     } catch (error) {

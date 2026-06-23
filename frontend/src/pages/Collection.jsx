@@ -293,9 +293,9 @@ const Collection = () => {
   useEffect(() => {
     let list = baseList.slice()
     if (sortType === 'low-high') {
-      list = list.sort((a, b) => getProductSalePrice(a) - getProductSalePrice(b))
+      list = list.sort((a, b) => getProductSalePrice(a) - getProductSalePrice(b))//sắp xép tăng dần
     } else if (sortType === 'high-low') {
-      list = list.sort((a, b) => getProductSalePrice(b) - getProductSalePrice(a))
+      list = list.sort((a, b) => getProductSalePrice(b) - getProductSalePrice(a)) // sắp xếp giảm dần
     }
     setFilterProducts(list)
   }, [baseList, sortType, getProductSalePrice])

@@ -10,7 +10,7 @@ const Login = () => {
   const [loginId, setLoginId] = useState('')
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
-
+  // Xử lý sự kiện khi người dùng submit form đăng nhập
   const onSubmitHandler = async (event) => {
     event.preventDefault()
     setLoading(true)
@@ -23,6 +23,7 @@ const Login = () => {
         ? { phone: digits, password }
         : { email: id, password }
 
+      // Gửi yêu cầu đăng nhập đến backend
       const response = await axios.post(backendUrl + '/api/user/login', body)
       if (response.data.success) {
         setToken(response.data.token)
