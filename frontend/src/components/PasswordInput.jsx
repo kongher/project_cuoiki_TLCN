@@ -25,7 +25,7 @@ const EyeIcon = ({ hidden }) => (
   </svg>
 )
 
-/** Ô mật khẩu một nút hiện/ẩn — ẩn icon mặc định của trình duyệt */
+/** Ô mật khẩu một nút hiện/ẩn */
 const PasswordInput = ({
   value,
   onChange,

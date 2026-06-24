@@ -51,6 +51,7 @@ const Customers = ({ token }) => {
     setTabAnimKey((k) => k + 1)
   }
 
+    // danh sách khách hàng 
   const loadCustomers = useCallback(async () => {
     setLoading(true)
     try {
@@ -67,6 +68,7 @@ const Customers = ({ token }) => {
     }
   }, [headers])
 
+  // laod danh sách top khác hàng thân thiết
   const loadTopCustomers = useCallback(async () => {
     setLoadingTop(true)
     try {
@@ -90,7 +92,7 @@ const Customers = ({ token }) => {
         setCoupons((res.data.coupons || []).filter((c) => c.active !== false))
       }
     } catch {
-      // ignore — modal still works for VIP
+      // bỏ qua — cửa sổ bật lên vẫn hoạt động đối với VIP
     }
   }, [headers])
 
@@ -101,6 +103,7 @@ const Customers = ({ token }) => {
     loadCoupons()
   }, [token, loadCustomers, loadTopCustomers, loadCoupons])
 
+  // tìm kiếm người dùng
   const filteredCustomers = useMemo(() => {
     const q = search.trim().toLowerCase()
     if (!q) return customers
@@ -112,6 +115,7 @@ const Customers = ({ token }) => {
     })
   }, [customers, search])
 
+  // khóa user
   const handleToggleBlock = async (customer) => {
     setActionId(customer._id)
     try {
@@ -137,6 +141,7 @@ const Customers = ({ token }) => {
     }
   }
 
+    // xác nhận xóa user
   const confirmDeleteCustomer = async () => {
     if (!deleteTarget?._id || deletingCustomer) return
     setDeletingCustomer(true)
@@ -159,6 +164,7 @@ const Customers = ({ token }) => {
     }
   }
 
+  // mở modal để tăng thưởng 
   const openRewardModal = (row) => {
     setRewardModal(row)
     setRewardType('voucher')
@@ -174,7 +180,7 @@ const Customers = ({ token }) => {
   }
 
   const isCustomCoupon = selectedCouponId === 'custom'
-
+  
   const handleGrantReward = async () => {
     if (!rewardModal?.userId) return
 

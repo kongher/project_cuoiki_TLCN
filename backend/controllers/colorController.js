@@ -51,6 +51,7 @@ export const adminListColors = async (req, res) => {
   }
 };
 
+// admin them màu sắc 
 export const adminAddColor = async (req, res) => {
   try {
     const name = String(req.body?.name || "").trim();

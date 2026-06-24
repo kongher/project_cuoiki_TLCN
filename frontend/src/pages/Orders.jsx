@@ -132,16 +132,18 @@ const Orders = () => {
     }
   }
 
+  // hủy đơn hàng
   const canCancelOrder = (order) => {
     if (!order) return false
     return ['Order Placed', 'Processing'].includes(String(order.status))
   }
-
+  // xác nhân đã nhận hàng
   const canConfirmReceived = (order) => {
     if (!order) return false
     return ['Shipped', 'Out for delivery'].includes(String(order.status))
   }
 
+    // nếu chưa đăng nhập reset lại dữ liệu
   const loadOrderData = useCallback(async () => {
     if (!token) {
       setRawOrders([])
@@ -200,6 +202,7 @@ const Orders = () => {
     loadOrderData()
   }, [loadOrderData])
 
+    // phản hội tự admin
   const showAdminFeedbackModal = useCallback((line) => {
     const review = getItemReview(line)
     const adminReply = getAdminReplyText(line)
@@ -215,6 +218,7 @@ const Orders = () => {
     return true
   }, [])
 
+    // mở phản hội
   const openAdminFeedbackModal = useCallback(
     (item) => {
       if (!showAdminFeedbackModal(item)) {
@@ -298,6 +302,7 @@ const Orders = () => {
     loadOrderData,
   ])
 
+    // trạng thái đơn hàng 
   const isReviewEligible = useCallback((item) => {
     return item?.status === 'Delivered'
   }, [])

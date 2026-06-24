@@ -80,9 +80,9 @@ const ListCoupon = ({ token }) => {
 
   useEffect(() => {
     fetchList()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // chỉnh sửa
   useEffect(() => {
     if (!editing || editing.usedCount > 0) return
     const loadProducts = async () => {
@@ -210,6 +210,7 @@ const ListCoupon = ({ token }) => {
         })
       }
 
+        // cập nhập lại
       const response = await axios.post(backendUrl + '/api/discount/update', payload, {
         headers: { token },
       })

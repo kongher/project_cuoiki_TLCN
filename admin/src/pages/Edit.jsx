@@ -154,11 +154,11 @@ const Edit = ({ token }) => {
     }
 
     fetchProduct()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // 
   }, [id])
 
   useEffect(() => {
-    // Ensure stockBySize keys match selected sizes
+    // Đảm bảo các khóa stockBySize khớp với kích thước đã chọn.
     setVariants((prev) =>
       (prev || []).map((v) => {
         const stockBySize = { ...(v.stockBySize || {}) }
@@ -173,6 +173,7 @@ const Edit = ({ token }) => {
     )
   }, [sizes])
 
+    // cập nhập  sản phẩm +
   const onSubmitHandler = async (e) => {
     e.preventDefault()
     if (!id) return
@@ -193,8 +194,8 @@ const Edit = ({ token }) => {
       formData.append('isActive', isActive)
       formData.append('sizes', JSON.stringify(sizes))
 
-      // legacy images only used when product has no variants
-      // removed: product gallery upload (use variant images)
+      // Hình ảnh cũ chỉ được sử dụng khi sản phẩm không có biến thể
+// đã xóa: tải lên thư viện sản phẩm (sử dụng hình ảnh biến thể)
 
       const normalizedVariants = (variants || [])
         .filter((v) => String(v?.colorName || '').trim())
@@ -227,6 +228,7 @@ const Edit = ({ token }) => {
         })
       })
 
+      // yêu cầu lưu vào dữ liệu
       const res = await axios.post(backendUrl + '/api/product/admin/update', formData, { headers: { token } })
       if (res.data.success) {
         toast.success('Đã lưu thay đổi')

@@ -52,17 +52,18 @@ const Register = () => {
   }
 
   useEffect(() => {
-    // hydrate token if user reloads page after verify OTP
+    // Mã thông báo được cấp lại nếu người dùng tải lại trang sau khi xác minh mã OTP.
     const em = normalizedEmail()
     if (!em) return
     try {
       const t = sessionStorage.getItem(tokenKeyOf(em))
       if (t && !registerToken) setRegisterToken(t)
     } catch (err) {
-      // ignore
+      // 
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [email])
+
+  // gửi OTP đến email người dùng
 
   const handleSendOtp = async (e) => {
     e?.preventDefault?.()
@@ -75,7 +76,7 @@ const Register = () => {
     setLoading(true)
     try {
       const res = await axios.post(`${backendUrl}/api/user/register/send-otp`, { email: value })
-      if (res.data.success) {
+      if (res.data.success) { // nếu gửi OTP thành công, chuyển sang bước xác thực OTP
         setEmail(value)
         setOtp('')
         setOtpSeconds(Number(res.data.expiresInSec) || 180)

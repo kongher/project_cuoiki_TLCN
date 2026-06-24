@@ -36,6 +36,7 @@ const Cart = () => {
   const selectedAmount = selectedCartData.reduce((total, item) => {
     const product = products.find(product => product._id === item._id);
     if (!product) return total;
+    //Tính giá của item (xem có giảm giá không)
     const itemPrice = product.discountPercent > 0
       ? (product.salePrice && product.salePrice > 0
           ? product.salePrice
@@ -43,7 +44,7 @@ const Cart = () => {
       : product.price;
     return total + itemPrice * item.quantity;
   }, 0);
-
+  // giá shipp
   const selectedShipping = getShippingFee(selectedAmount);
   const selectedTotal = selectedAmount === 0 ? 0 : selectedAmount + selectedShipping;
   const allSelected = cartData.length > 0 && cartData.every(item => selectedItems[`${item._id}_${item.color || 'DEFAULT'}_${item.size}`]);
@@ -51,7 +52,7 @@ const Cart = () => {
   const toggleSelect = (key) => {
     setSelectedItems(prev => ({ ...prev, [key]: !prev[key] }));
   }
-
+  // chọn tát cả
   const toggleSelectAll = () => {
     const checked = !allSelected;
     const next = {};

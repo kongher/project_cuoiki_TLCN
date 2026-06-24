@@ -33,6 +33,7 @@ const formatHistoryRow = (row) => ({
   createdAt: row.createdAt,
 })
 
+// tra kiếu tồn kho
 const findCurrentStockBySku = async (sku) => {
   const products = await productModel.find({}).lean()
   const rows = flattenInventoryRows(products)
@@ -40,6 +41,7 @@ const findCurrentStockBySku = async (sku) => {
   return hit ? { quantity: hit.quantity, productName: hit.productName, row: hit } : null
 }
 
+// danh sách tồn kho
 export const listInventoryHistory = async (req, res) => {
   try {
     const q = String(req.query.q || '').trim()
@@ -53,6 +55,7 @@ export const listInventoryHistory = async (req, res) => {
       filter.$or = [{ sku: re }, { productName: re }]
     }
 
+    // tim kiếm tồn kho
     const rows = await inventoryHistoryModel
       .find(filter)
       .sort({ createdAt: -1 })
@@ -142,6 +145,7 @@ export const getSkuInventoryDetail = async (req, res) => {
   }
 }
 
+// báo cáo tồn kho doanh số theo sku
 export const getInventorySalesReport = async (req, res) => {
   try {
     const ranges = getPeriodRanges('this_month')
@@ -211,6 +215,7 @@ export const getInventorySalesReport = async (req, res) => {
       })
     }
 
+    //sản phẩm đã bán 
     for (const [sku, sold] of soldBySku.entries()) {
       if (mergedBySku.has(sku)) continue
       mergedBySku.set(sku, {
@@ -226,6 +231,7 @@ export const getInventorySalesReport = async (req, res) => {
 
     const allRows = [...mergedBySku.values()]
 
+    // sản phẩm bá chạy
     const topSkus = allRows
       .filter((r) => r.soldQty > 0)
       .sort((a, b) => b.soldQty - a.soldQty || a.productName.localeCompare(b.productName, 'vi'))
@@ -239,6 +245,7 @@ export const getInventorySalesReport = async (req, res) => {
         soldQty,
       }))
 
+      // sản phẩm tồn kho lâu 
     const slowSkus = allRows
       .sort(
         (a, b) =>

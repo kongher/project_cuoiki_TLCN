@@ -1,4 +1,4 @@
-/** Taxonomy Admin — đồng bộ với frontend/src/config/catalogTaxonomy.js */
+
 export const CATALOG_LEAVES = [
   { slug: 'nam-ao-thun', label: 'Nam · Áo · Thun', category: 'Men', subCategory: 'Topwear' },
   { slug: 'nam-ao-so-mi', label: 'Nam · Áo · Sơ mi', category: 'Men', subCategory: 'Topwear' },

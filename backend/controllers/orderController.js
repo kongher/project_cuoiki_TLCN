@@ -446,7 +446,7 @@ const getOrderById = async (req, res) => {
     }
 }
 
-// --- 5. ADMIN & USER ORDERS ---
+// đon hàng của admin 
 const allOrders = async (req, res) => {
     try {
         const orders = await orderModel.find({});
@@ -466,7 +466,7 @@ const mapOrderItemsWithReviewFlag = (order) => {
     })
     return plain
 }
-
+// đon hàng của user
 const userOrders = async (req, res) => {
     try {
         const userId = req.userId || req.body.userId
@@ -476,6 +476,7 @@ const userOrders = async (req, res) => {
     } catch (error) { res.json({ success: false, message: error.message }); }
 };
 
+// admin cập nhập trạng thái đơn hàng 
 const updateStatus = async (req, res) => {
     try {
         const order = await orderModel.findById(req.body.orderId)
@@ -562,6 +563,7 @@ const cancelUserOrder = async (req, res) => {
     }
 };
 
+    // danh sách đánh giá 
 const reviewList = async (req, res) => {
     try {
         const orders = await orderModel.find({});
@@ -603,6 +605,7 @@ const reviewList = async (req, res) => {
     }
 };
 
+// phản hội đánh giá 
 const replyReview = async (req, res) => {
     try {
         const { orderId, productId, reply } = req.body
@@ -666,6 +669,7 @@ const replyReview = async (req, res) => {
     }
 };
 
+// thêm đánh giá 
 const addReview = async (req, res) => {
     try {
         const { orderId, productId, rating, comment, tags = [] } = req.body;

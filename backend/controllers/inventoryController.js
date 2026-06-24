@@ -4,6 +4,7 @@ import { getShopSettings } from '../services/shopSettings.js'
 import { logInventoryHistory } from '../services/inventoryHistory.js'
 const norm = (s) => String(s || '').trim().toLowerCase()
 
+// Lấy toàn bộ sản phẩm từ database
 export const listInventory = async (req, res) => {
   try {
     const q = String(req.query.q || '').trim().toLowerCase()
@@ -18,6 +19,7 @@ export const listInventory = async (req, res) => {
           String(r.size).toLowerCase().includes(q)
       )
     }
+    // cài đặt của web
     const settings = await getShopSettings()
     const threshold = Number(settings.lowStockThreshold) || 5
     res.json({ success: true, rows, lowStockThreshold: threshold })
@@ -25,7 +27,7 @@ export const listInventory = async (req, res) => {
     res.json({ success: false, message: error.message })
   }
 }
-
+// danh sách sản phẩm sắp hết hàng 
 export const listLowStock = async (req, res) => {
   try {
     const settings = await getShopSettings()
@@ -127,16 +129,16 @@ export const getInventorySettings = async (req, res) => {
     res.json({
       success: true,
       settings: {
-        lowStockThreshold: settings.lowStockThreshold,
-        deadstockDaysMin: settings.deadstockDaysMin,
-        deadstockDaysMax: settings.deadstockDaysMax,
+        lowStockThreshold: settings.lowStockThreshold,//sản phẩm sắp hết hàng 
+        deadstockDaysMin: settings.deadstockDaysMin,  //số ngày tối thiểu để xem hàng chậm bán 
+        deadstockDaysMax: settings.deadstockDaysMax,  // số ngày tối đa hàng lâu
       },
     })
   } catch (error) {
     res.json({ success: false, message: error.message })
   }
 }
-
+// cập nhập cài đặt
 export const updateInventorySettings = async (req, res) => {
   try {
     const settings = await getShopSettings()

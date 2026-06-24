@@ -35,19 +35,23 @@ const getMailCredentials = () => {
  * Gửi mã OTP đặt lại mật khẩu tới email người dùng (Gmail + mật khẩu ứng dụng).
  */
 const getTransporter = () => {
-  const { user, pass } = getMailCredentials();
+  const { user, pass } = getMailCredentials()
+
+  if (!user || !pass) {
+    throw new Error('Thiếu EMAIL_USER hoặc EMAIL_PASS trong file .env')
+  }
 
   return nodemailer.createTransport({
-    host: 'smtp-relay.brevo.com', // Cấu hình theo image_28103a.png
-    port: 587,                   // Cấu hình theo image_28103a.png
-    secure: false,               // false cho port 587
-    family: 4,                   // BẮT BUỘC THÊM DÒNG NÀY ĐỂ HẾT LỖI ENETUNREACH
+    host: 'smtp-relay.brevo.com',
+    port: 587,
+    secure: false,
+    family: 4,
     auth: {
-      user: user,                // Sẽ lấy từ biến môi trường EMAIL_USER
-      pass: pass                 // Sẽ lấy từ biến môi trường EMAIL_PASS (SMTP Key)
+      user,
+      pass,
     },
-  });
-};
+  })
+}
 export const sendPasswordResetOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
   const transporter = getTransporter()
   const { user } = getMailCredentials()

@@ -158,7 +158,7 @@ const App = () => {
                     <Orders
                       token={token}
                       onStatusChanged={({ orderId, prevStatus, nextStatus }) => {
-                        // if it was pending confirmation and moved away, decrement immediately
+                        // Nếu giao dịch đang chờ xác nhận và đã được chuyển đi, hãy giảm ngay lập tức.
                         if (String(prevStatus) === 'Order Placed' && String(nextStatus) !== 'Order Placed') {
                           setPendingOrderCount((p) => Math.max(0, Number(p || 0) - 1))
                           setPendingOrders((prev) => (prev || []).filter((o) => String(o?._id) !== String(orderId)))

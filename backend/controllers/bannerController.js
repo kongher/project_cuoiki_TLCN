@@ -32,6 +32,7 @@ const validateBannerSortOrder = async (sortOrder, { excludeId } = {}) => {
   return { ok: true, order }
 }
 
+// lấy tất cả các banner hợp lệ hiển thị trên web
 export const listPublicBanners = async (req, res) => {
   try {
     const all = await bannerModel.find({}).sort({ sortOrder: 1, createdAt: -1 }).lean()
@@ -42,6 +43,7 @@ export const listPublicBanners = async (req, res) => {
   }
 }
 
+// admin lấy danh sách banner
 export const adminListBanners = async (req, res) => {
   try {
     const banners = await bannerModel.find({}).sort({ sortOrder: 1, createdAt: -1 }).lean()
@@ -112,6 +114,8 @@ export const saveBanner = async (req, res) => {
     res.json({ success: false, message: error.message })
   }
 }
+
+// xóa banner 
 
 export const removeBanner = async (req, res) => {
   try {

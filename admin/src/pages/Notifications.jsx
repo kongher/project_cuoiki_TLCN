@@ -46,9 +46,9 @@ const Notifications = ({ token, pendingOrders = [], pendingReviews = [], refresh
   }
 
   useEffect(() => {
-    // ensure up-to-date when opening
+    // Đảm bảo cập nhật khi mở
     manualRefresh()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [])
 
   return (

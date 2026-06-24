@@ -108,7 +108,6 @@ const buildCouponPayload = (body) => {
 }
 
 
-
 const applyCoupon = async (req, res) => {
 
     try {
@@ -194,7 +193,6 @@ const applyCoupon = async (req, res) => {
 }
 
 
-
 const listAvailableCoupons = async (req, res) => {
 
     try {
@@ -202,63 +200,29 @@ const listAvailableCoupons = async (req, res) => {
         const userId = req.userId
 
         if (!userId) return res.json({ success: false, message: 'Vui lòng đăng nhập' })
-
-
-
         const { amount, items } = req.body
-
         const coupons = await couponModel.find({ active: { $ne: false } }).lean()
-
         const available = []
-
-
-
         for (const coupon of coupons) {
-
             if (!canUserSeeCoupon(coupon, userId)) continue
-
             const status = computeCouponStatus(coupon)
-
             if (status !== 'running') continue
-
-
-
             const check = await validateCouponForCart({
-
                 coupon,
-
                 userId,
-
                 items: Array.isArray(items) ? items : [],
-
                 cartSubtotal: amount,
-
             })
-
             if (!check.ok) continue
-
-
-
             available.push(
-
                 serializeCouponForClient(coupon, {
-
                     eligibleSubtotal: check.eligibleSubtotal,
-
                     discountAmount: check.discountAmount,
-
                 })
-
             )
-
         }
 
-
-
         available.sort((a, b) => (b.discountAmount || 0) - (a.discountAmount || 0))
-
-
-
         res.json({ success: true, coupons: available, count: available.length })
 
     } catch (error) {
@@ -271,8 +235,7 @@ const listAvailableCoupons = async (req, res) => {
 
 }
 
-
-
+// tạo mã giảm sản phẩm 
 const createCoupon = async (req, res) => {
 
     try {
@@ -364,92 +327,50 @@ const createCoupon = async (req, res) => {
 
 }
 
-
-
+// cập nhập lại mã 
 const listCoupons = async (req, res) => {
-
     try {
-
         await couponModel.updateMany(
-
             {
-
                 $or: [
-
                     { isPersonalGift: true },
 
                     { assignedToUserId: { $ne: null }, singleUsePerUser: true },
-
                 ],
-
                 usageLimit: { $lte: 0 },
-
             },
-
             { $set: { usageLimit: 1, isPersonalGift: true } }
 
         )
-
-
-
+        // tạo mã giảm giả riêng 
         const giftsMissingExpiry = await couponModel.find({
-
             assignedToUserId: { $ne: null },
-
             expiresAt: null,
-
         })
-
         const now = Date.now()
-
         for (const g of giftsMissingExpiry) {
-
             const base = g.createdAt ? new Date(g.createdAt).getTime() : now
-
             await couponModel.updateOne(
-
                 { _id: g._id },
-
                 { $set: { expiresAt: base + GIFT_COUPON_VALIDITY_MS, isPersonalGift: true } }
-
             )
 
         }
-
-
-
         const coupons = await couponModel.find({}).sort({ createdAt: -1 })
-
-
-
         const expiredIds = coupons
-
             .filter((c) => c?.expiresAt && now > Number(c.expiresAt) && c.active === true)
-
             .map((c) => c._id)
-
         if (expiredIds.length) {
-
             await couponModel.updateMany({ _id: { $in: expiredIds } }, { $set: { active: false } })
 
         }
-
-
-
         res.json({
-
             success: true,
-
             coupons: coupons.map((c) => ({
-
                 ...c.toObject(),
-
                 status: computeCouponStatus(c),
-
                 statusLabel: COUPON_STATUS_LABELS[computeCouponStatus(c)],
-
                 discountLabel: buildCouponDiscountLabel(c),
-
             })),
 
         })
@@ -463,110 +384,60 @@ const listCoupons = async (req, res) => {
     }
 
 }
-
-
-
+// admin bất tắt mã giảm giá 
 const toggleCouponActive = async (req, res) => {
 
     try {
-
         const { id, active } = req.body
-
         if (!id) return res.json({ success: false, message: 'Missing id' })
-
         const updated = await couponModel.findByIdAndUpdate(id, { active: Boolean(active) }, { new: true })
-
         if (!updated) return res.json({ success: false, message: 'Coupon not found' })
-
         res.json({ success: true, coupon: updated, message: 'Updated' })
-
     } catch (error) {
-
         console.log(error)
-
         res.json({ success: false, message: error.message })
-
     }
 
 }
-
-
-
+// sửa mã giảm giá 
 const updateCoupon = async (req, res) => {
-
     try {
-
         const { id } = req.body
-
         if (!id) return res.json({ success: false, message: 'Missing id' })
-
         const existing = await couponModel.findById(id)
-
         if (!existing) return res.json({ success: false, message: 'Coupon not found' })
-
         const usedCount = Number(existing.usedCount) || 0
-
         let patch = {}
-
         if (usedCount > 0) {
-
-            if (req.body.usageLimit !== undefined) {
-
+           if (req.body.usageLimit !== undefined) {
                 const limit = Number(req.body.usageLimit) || 0
-
                 if (limit > 0 && limit < usedCount) {
-
                     return res.json({
-
                         success: false,
-
                         message: `Số lượng tối đa không được nhỏ hơn ${usedCount} (đã sử dụng)`,
-
                     })
-
                 }
-
                 patch.usageLimit = limit
-
             }
-
             if (req.body.expiresAt !== undefined) {
-
                 patch.expiresAt = req.body.expiresAt ? Number(req.body.expiresAt) : null
-
             }
-
         } else {
 
             patch = buildCouponPayload(req.body)
-
             delete patch.code
-
         }
-
         if (!Object.keys(patch).length) {
-
             return res.json({ success: false, message: 'Không có thông tin để cập nhật' })
-
         }
-
         const updated = await couponModel.findByIdAndUpdate(id, patch, { new: true })
-
         if (!updated) return res.json({ success: false, message: 'Coupon not found' })
-
         res.json({ success: true, coupon: updated, message: 'Đã cập nhật mã giảm giá' })
-
     } catch (error) {
-
         console.log(error)
-
         res.json({ success: false, message: error.message })
-
     }
-
 }
-
-
 
 export { applyCoupon, createCoupon, listCoupons, toggleCouponActive, updateCoupon, listAvailableCoupons }
 

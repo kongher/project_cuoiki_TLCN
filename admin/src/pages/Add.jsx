@@ -80,7 +80,7 @@ const Add = ({ token }) => {
   }, [category, subCategory, catalogSlug])
 
   useEffect(() => {
-    // Ensure stockBySize keys match selected sizes
+    //Đảm bảo các khóa stockBySize khớp với kích thước đã chọn.
     setVariants((prev) =>
       prev.map((v) => {
         const stockBySize = { ...(v.stockBySize || {}) }
@@ -133,7 +133,7 @@ const Add = ({ token }) => {
 
       ;(variants || []).forEach((v, idx) => {
         if (v.thumbnailFile) formData.append(`variantThumbnail${idx}`, v.thumbnailFile)
-        // backward compatible: backend accepts variantMain{idx} or variantImage{idx}
+        // 
         if (v.mainFile) formData.append(`variantMain${idx}`, v.mainFile)
         if (v.hoverFile) formData.append(`variantHover${idx}`, v.hoverFile)
         ;(v.gallerySlots || []).forEach((f) => {

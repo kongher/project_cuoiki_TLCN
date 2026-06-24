@@ -128,6 +128,7 @@ export const getTopCustomers = async (req, res) => {
       { $unwind: { path: '$user', preserveNullAndEmptyArrays: false } },
     ])
 
+      // người dùng 
     const customers = rows.map((r, idx) => ({
       rank: idx + 1,
       userId: r._id,
@@ -223,6 +224,7 @@ export const grantCustomerReward = async (req, res) => {
           return res.json({ success: false, message: 'Số tiền giảm phải lớn hơn 0' })
         }
 
+          // tạo mã giảm giá riêng 
         const code = await buildUniqueGiftCode(rawCode)
         coupon = await createPersonalGiftCoupon({
           userId: user._id,
@@ -246,6 +248,7 @@ export const grantCustomerReward = async (req, res) => {
           return res.json({ success: false, message: 'Mã giảm giá đang tạm dừng' })
         }
 
+          // nâng thành khách VIP
         const personalCode = await buildUniqueGiftCode(`${source.code}-VIP`)
         coupon = await createPersonalGiftCoupon({
           userId: user._id,

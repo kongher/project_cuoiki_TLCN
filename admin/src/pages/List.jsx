@@ -44,6 +44,7 @@ const List = ({ token }) => {
     }
   }
 
+  // xác nhận xóa sản phẩm 
   const confirmRemoveProduct = async () => {
     if (!deleteTarget?.id) return
     setDeleting(true)
@@ -88,6 +89,7 @@ const List = ({ token }) => {
     }
   }
 
+    // chọn xóa nhiều sản phẩm cùng lúc
   const bulkDelete = async () => {
     const ids = Array.from(selectedIds)
     if (!ids.length) return toast.info('Bạn chưa chọn sản phẩm nào')
@@ -111,6 +113,7 @@ const List = ({ token }) => {
     }
   }
 
+  //chọn sản phẩm để giảm gia 
   const bulkApplyDiscount = async () => {
     const ids = Array.from(selectedIds)
     if (!ids.length) return toast.info('Bạn chưa chọn sản phẩm nào')
@@ -122,7 +125,7 @@ const List = ({ token }) => {
     if (discountPercent > 90) {
       return toast.error('Giảm giá tối đa 90%')
     }
-
+    // thông tin xác nhận
     const ok = window.confirm(
       bulkToSpecialSale
         ? `Bạn có chắc chắn muốn giảm giá ${discountPercent}% cho ${ids.length} sản phẩm đã chọn và đưa vào Siêu sale trong tháng không?`
@@ -163,6 +166,7 @@ const List = ({ token }) => {
     return sum
   }
 
+  // lọc theo danh mục
   const categories = useMemo(() => {
     const set = new Set((list || []).map((p) => p?.category).filter(Boolean))
     return ['ALL', ...Array.from(set)]
