@@ -42,15 +42,15 @@ const getTransporter = () => {
   }
 
   return nodemailer.createTransport({
-    host: 'smtp-relay.brevo.com',
-    port: 587,
-    secure: false,
-    family: 4,
-    auth: {
-      user,
-      pass,
-    },
-  })
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    user: 'herkong633@gmail.com', // Email của bạn
+    pass: 'mật_khẩu_ứng_dụng_gmail' // Phải là App Password
+  },
+  connectionTimeout: 60000 // Tăng thời gian chờ lên
+})
 }
 export const sendPasswordResetOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
   const transporter = getTransporter()
