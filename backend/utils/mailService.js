@@ -1,64 +1,27 @@
-import nodemailer from 'nodemailer'
-
-const getMailCredentials = () => {
-  const user =
-    process.env.EMAIL_USER ||
-    process.env.SMTP_USER ||
-    process.env.GMAIL_USER
-  const pass = (
-    process.env.EMAIL_PASS ||
-    process.env.SMTP_APP_PASSWORD ||
-    process.env.GMAIL_APP_PASSWORD ||
-    ''
-  ).replace(/\s/g, '')
-
-  return { user, pass }
-}
-
-/*const getTransporter = () => {
-  const { user, pass } = getMailCredentials()
-
-  if (!user || !pass) {
-    throw new Error('Thiếu EMAIL_USER và EMAIL_PASS (hoặc SMTP_USER / SMTP_APP_PASSWORD) trong file .env')
-  }
-
-  return nodemailer.createTransport({
-    service: 'gmail',
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: { user, pass },
-  })
-}*/
+import * as brevo from '@getbrevo/brevo';
 
 /**
- * Gửi mã OTP đặt lại mật khẩu tới email người dùng (Gmail + mật khẩu ứng dụng).
+ * Hàm hỗ trợ gửi mail chung qua Brevo API
  */
-const getTransporter = () => {
-  const { user, pass } = getMailCredentials()
+const sendBrevoMail = async ({ to, subject, htmlContent }) => {
+  const apiInstance = new brevo.TransactionalEmailsApi();
+  
+  // Cấu hình API Key từ .env
+  apiInstance.setApiKey(brevo.TransactionalEmailsApiApiKeys.apiKey, process.env.BREVO_API_KEY);
 
-  if (!user || !pass) {
-    throw new Error('Thiếu EMAIL_USER hoặc EMAIL_PASS trong file .env')
-  }
+  const sendSmtpEmail = new brevo.SendSmtpEmail();
+  sendSmtpEmail.subject = subject;
+  sendSmtpEmail.htmlContent = htmlContent;
+  sendSmtpEmail.sender = { "name": "Forever Shop", "email": "herkong633@gmail.com" }; 
+  sendSmtpEmail.to = [{ "email": to }];
 
-  return nodemailer.createTransport({
-  host: process.env.SMTP_HOST||'smtp-relay.brevo.com',
-  port: process.env.SMTP_PORT||2525,
-  secure: false,
-  requireTLS: true,
-  auth: {
-    user: process.env.EMAIL_USER, // Nó sẽ tự lấy 'afb900001@smtp-brevo.com'
-      pass: process.env.EMAIL_PASS  // Nó sẽ tự lấy cái mã Key của bạn
-  },
-  connectionTimeout: 10000, 
-    socketTimeout: 20000
-})
-}
+  return await apiInstance.sendTransacEmail(sendSmtpEmail);
+};
+
+/**
+ * Gửi mã OTP đặt lại mật khẩu
+ */
 export const sendPasswordResetOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
-  const transporter = getTransporter()
-  const { user } = getMailCredentials()
-  const from = process.env.SMTP_FROM || user
-
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:520px;margin:0 auto;padding:24px;color:#111;">
       <h2 style="margin:0 0 12px;">Lấy lại mật khẩu</h2>
@@ -67,28 +30,15 @@ export const sendPasswordResetOtpEmail = async ({ to, otp, expiresInSec = 180 })
       <p style="color:#666;font-size:14px;">Mã có hiệu lực trong <strong>${expiresInSec}</strong> giây (3 phút). Không chia sẻ mã này với bất kỳ ai.</p>
       <p style="color:#999;font-size:12px;margin-top:24px;">Nếu bạn không yêu cầu, hãy bỏ qua email này.</p>
     </div>
-  `
+  `;
 
-  await transporter.sendMail({
-    from: `"Forever Shop" <${from}>`,
-    to,
-    subject: 'Mã OTP đặt lại mật khẩu',
-    text: `Mã OTP đặt lại mật khẩu của bạn là: ${otp}. Mã hết hạn sau ${expiresInSec} giây.`,
-    html,
-  })
-}
+  await sendBrevoMail({ to, subject: 'Mã OTP đặt lại mật khẩu', htmlContent: html });
+};
 
 /**
- * Gửi mã OTP xác thực đăng ký tài khoản.
+ * Gửi mã OTP xác thực đăng ký tài khoản
  */
-import * as brevo from '@getbrevo/brevo';
-
 export const sendRegisterOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
-  const apiInstance = new brevo.TransactionalEmailsApi();
-  
-  const apiKey = apiInstance.authentications['apiKey'];
-  apiKey.apiKey = process.env.BREVO_API_KEY; 
-
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:520px;margin:0 auto;padding:24px;color:#111;">
       <h2 style="margin:0 0 12px;">Xác thực đăng ký tài khoản</h2>
@@ -98,35 +48,23 @@ export const sendRegisterOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
     </div>
   `;
 
-  const sendSmtpEmail = new brevo.SendSmtpEmail();
-  sendSmtpEmail.subject = "Mã OTP đăng ký tài khoản";
-  sendSmtpEmail.htmlContent = html;
-  sendSmtpEmail.sender = { "name": "Forever Shop", "email": "herkong633@gmail.com" }; 
-  sendSmtpEmail.to = [{ "email": to }];
-
-  // Gửi qua API
-  await apiInstance.sendTransactEmail(sendSmtpEmail);
+  await sendBrevoMail({ to, subject: 'Mã OTP đăng ký tài khoản', htmlContent: html });
 };
 
-const formatVnd = (n) => `${Number(n || 0).toLocaleString('vi-VN')}đ`
+const formatVnd = (n) => `${Number(n || 0).toLocaleString('vi-VN')}đ`;
 
 /**
- * Gửi mã giảm giá ưu đãi cho khách hàng thân thiết.
+ * Gửi mã giảm giá ưu đãi
  */
 export const sendVoucherGiftEmail = async ({ to, customerName, coupon }) => {
-  const transporter = getTransporter()
-  const { user } = getMailCredentials()
-  const from = process.env.SMTP_FROM || user
-
-  const code = coupon?.code || ''
-  const discountText =
-    coupon?.type === 'amount'
-      ? `Giảm ${formatVnd(coupon.amount)}`
-      : `Giảm ${coupon?.percent || 0}%`
-  const minText = coupon?.minAmount ? `Áp dụng đơn từ ${formatVnd(coupon.minAmount)}` : ''
-  const expireText = coupon?.expiresAt
-    ? `Hạn dùng: ${new Date(Number(coupon.expiresAt)).toLocaleDateString('vi-VN')}`
-    : 'Không giới hạn thời gian'
+  const code = coupon?.code || '';
+  const discountText = coupon?.type === 'amount' 
+    ? `Giảm ${formatVnd(coupon.amount)}` 
+    : `Giảm ${coupon?.percent || 0}%`;
+  const minText = coupon?.minAmount ? `Áp dụng đơn từ ${formatVnd(coupon.minAmount)}` : '';
+  const expireText = coupon?.expiresAt 
+    ? `Hạn dùng: ${new Date(Number(coupon.expiresAt)).toLocaleDateString('vi-VN')}` 
+    : 'Không giới hạn thời gian';
 
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:520px;margin:0 auto;padding:24px;color:#111;">
@@ -139,13 +77,7 @@ export const sendVoucherGiftEmail = async ({ to, customerName, coupon }) => {
       <p style="color:#666;font-size:14px;">${expireText}</p>
       <p style="color:#999;font-size:12px;margin-top:24px;">Nhập mã khi thanh toán trên website Forever Shop.</p>
     </div>
-  `
+  `;
 
-  await transporter.sendMail({
-    from: `"Forever Shop" <${from}>`,
-    to,
-    subject: 'Forever Shop tặng bạn mã giảm giá ưu đãi',
-    text: `Mã giảm giá: ${code}. ${discountText}. ${minText} ${expireText}`,
-    html,
-  })
-}
+  await sendBrevoMail({ to, subject: 'Forever Shop tặng bạn mã giảm giá ưu đãi', htmlContent: html });
+};
