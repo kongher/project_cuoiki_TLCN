@@ -81,7 +81,7 @@ export const sendPasswordResetOtpEmail = async ({ to, otp, expiresInSec = 180 })
 /**
  * Gửi mã OTP xác thực đăng ký tài khoản.
  */
-const brevo = require('@getbrevo/brevo');
+import * as brevo from '@getbrevo/brevo';
 
 export const sendRegisterOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
   const apiInstance = new brevo.TransactionalEmailsApi();
