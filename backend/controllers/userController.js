@@ -172,7 +172,7 @@ const resendRegisterOtp = async (req, res) => {
 }
 // Đăng ký tài khoản mới
 const registerUser = async (req, res) => {
-    try {
+    try { 
         const email = normalizeEmailInput(req.body.email)
         const phone = normalizePhone(req.body.phone)
         const name = String(req.body.name || '').trim()
