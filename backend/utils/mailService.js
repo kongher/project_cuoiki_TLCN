@@ -42,9 +42,10 @@ const getTransporter = () => {
   }
 
   return nodemailer.createTransport({
-  host: 'smtp-relay.brevo.com',
-  port: 587,
+  host: process.env.SMTP_HOST||'smtp-relay.brevo.com',
+  port: process.env.SMTP_PORT||2525,
   secure: false,
+  requireTLS: true,
   auth: {
     user: process.env.EMAIL_USER, // Nó sẽ tự lấy 'afb900001@smtp-brevo.com'
       pass: process.env.EMAIL_PASS  // Nó sẽ tự lấy cái mã Key của bạn
@@ -80,10 +81,13 @@ export const sendPasswordResetOtpEmail = async ({ to, otp, expiresInSec = 180 })
 /**
  * Gửi mã OTP xác thực đăng ký tài khoản.
  */
+const brevo = require('@getbrevo/brevo');
+
 export const sendRegisterOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
-  const transporter = getTransporter()
-  const { user } = getMailCredentials()
-  const from = process.env.SMTP_FROM || user
+  const apiInstance = new brevo.TransactionalEmailsApi();
+  
+  const apiKey = apiInstance.authentications['apiKey'];
+  apiKey.apiKey = process.env.BREVO_API_KEY; 
 
   const html = `
     <div style="font-family:Arial,sans-serif;max-width:520px;margin:0 auto;padding:24px;color:#111;">
@@ -92,16 +96,17 @@ export const sendRegisterOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
       <p style="font-size:28px;font-weight:bold;letter-spacing:6px;margin:20px 0;">${otp}</p>
       <p style="color:#666;font-size:14px;">Mã có hiệu lực trong <strong>${expiresInSec}</strong> giây (3 phút).</p>
     </div>
-  `
+  `;
 
-  await transporter.sendMail({
-    from: `"Forever Shop" <${from}>`,
-    to,
-    subject: 'Mã OTP đăng ký tài khoản',
-    text: `Mã OTP đăng ký của bạn là: ${otp}. Mã hết hạn sau ${expiresInSec} giây.`,
-    html,
-  })
-}
+  const sendSmtpEmail = new brevo.SendSmtpEmail();
+  sendSmtpEmail.subject = "Mã OTP đăng ký tài khoản";
+  sendSmtpEmail.htmlContent = html;
+  sendSmtpEmail.sender = { "name": "Forever Shop", "email": "email-đã-verify-của-bạn@gmail.com" }; // Thay đúng email bạn đã verify trên Brevo
+  sendSmtpEmail.to = [{ "email": to }];
+
+  // Gửi qua API
+  await apiInstance.sendTransactEmail(sendSmtpEmail);
+};
 
 const formatVnd = (n) => `${Number(n || 0).toLocaleString('vi-VN')}đ`
 
