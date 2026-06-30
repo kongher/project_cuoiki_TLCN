@@ -101,7 +101,7 @@ export const sendRegisterOtpEmail = async ({ to, otp, expiresInSec = 180 }) => {
   const sendSmtpEmail = new brevo.SendSmtpEmail();
   sendSmtpEmail.subject = "Mã OTP đăng ký tài khoản";
   sendSmtpEmail.htmlContent = html;
-  sendSmtpEmail.sender = { "name": "Forever Shop", "email": "email-đã-verify-của-bạn@gmail.com" }; // Thay đúng email bạn đã verify trên Brevo
+  sendSmtpEmail.sender = { "name": "Forever Shop", "email": "herkong633@gmail.com" }; 
   sendSmtpEmail.to = [{ "email": to }];
 
   // Gửi qua API
